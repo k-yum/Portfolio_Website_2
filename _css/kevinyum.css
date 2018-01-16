@@ -1,0 +1,163 @@
+* {
+  padding: 0;
+  margin: 0;
+  max-width: 1920px;
+  max-height: 1080px;
+}
+
+/* FONTS */
+
+@font-face {
+  font-family: "brandon";
+  src: url('../_fonts/brandon_grotesque/Brandon_reg.otf') format('truetype');
+} 
+@font-face {
+  font-family: "raleway";
+  src: url("../_fonts/raleway/Raleway-Regular.ttf") format('truetype');
+}
+@font-face {
+  font-family: "bebas";
+  src: url("../_fonts/BebasNeue.otf") format('truetype');
+}
+@font-face {
+  font-family: "museo";
+  src: url("../_fonts/MuseoSans_500.otf") format('truetype');
+}
+
+
+/* HOME PAGE */
+
+body {
+  width: 100%;
+  height: 100%;
+  background-image:  url(../_images/face.png), url(../_images/background.png);
+  background-repeat: no-repeat, no-repeat;
+  background-attachment: fixed,fixed;
+  background-size: 100% ,cover;
+  background-position: center,center;
+}
+
+.logo:before {
+  display: inline-block;
+  width: 70px;
+  height: 70px;
+  margin: 30px;
+  content: "";
+  background-image: url(../_images/ky-logo2.png);
+  background-repeat: no-repeat;
+  background-size:contain;
+}
+
+/* nav */ 
+.dropbtn {
+  background-image: url(../_images/nav-icon.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: white;
+  margin-left: 10px;
+  padding: 18px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+.dropbtn:hover,
+.dropbtn:focus {
+  animation: shake 0.82s cubic-bezier(.36, .07, .19, .97) both;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  min-width: 160px;
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: dimgray;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a {
+  position: relative;
+  color: dimgray;
+  text-decoration: none;
+}
+
+.dropdown-content a:hover {
+  color: red;
+}
+
+.dropdown-content a:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: red;
+  visibility: hidden;
+  -webkit-transform: scaleX(0);
+  -moz-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s;
+}
+
+.dropdown-content a:hover:before {
+  visibility: visible;
+  -webkit-transform: scaleX(1);
+  -moz- transform: scaleX(1);
+  transform: scaleX(1);
+}
+
+.show {
+  display: block;
+}
+
+/* home intro */
+
+.intro {
+  width: 25%;
+  height: 50%;
+  text-align: right;
+  position: absolute;
+  left: 3%;
+  top: 35%;
+}
+
+.intro h1 {
+  font: 6.6em/90px bebas, sans-serif;
+  color: white;
+}
+
+.intro p {
+  font: 1.2em raleway, sans-serif;
+  color: white;
+}
+
+.nav-list {
+  width: 25%;
+  height: auto;
+  position: absolute;
+  right: 5%;
+  top: 35%;
+}
+
+.nav-list li {
+  text-align: left;
+  list-style-type: none;
+  font: 6.6em/90px bebas, sans-serif;
+  color: yellow;
+  opacity: 0.7;
+}
+
+
+
