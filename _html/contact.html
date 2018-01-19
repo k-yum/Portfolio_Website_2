@@ -1,17 +1,93 @@
 <!html doc>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Kevin Yum - Porfolio</title>
-    <link rel="icon" href="_images/ky-logo.png">
-    <link href="../_css/foundation.css" rel="stylesheet">
-    <link href="../_css/kevinyum.css" type="text/css" rel="stylesheet">
-  </head>
-  
-  <body>
-    <div class="background">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Kevin Yum - Porfolio</title>
+  <link rel="icon" href="_images/ky-logo.png">
+  <link href="../_css/foundation.css" rel="stylesheet">
+  <link href="../_css/kevinyum2.css" type="text/css" rel="stylesheet">
+</head>
+
+<body>
+  <div class="contact">
+
+    <nav class="row full-width">
+      <div class="logo">
+        <a href="../index.html"></a>
+      </div>
+
+      <div id="myNav" class="overlay">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <div class="overlay-content">
+          <a href="#">About</a>
+          <a href="#">Projects</a>
+          <a href="#">Contact</a>
+        </div>
+      </div>
+
+      <span style="font-size:40px;cursor:pointer;color:white" onclick="openNav()" id="navbtn">&#9776;</span>
+    </nav>
+
+
+    <div class="contact_intro">
+      <div class="row">
+        <div class="small-6 small-offset-3 column">
+          <h1>GET IN TOUCH</h1>
+          <p>Want to get in touch or talk to me?<br>Contact me via form, email, phone/text</p>
+        </div>
+      </div>
     </div>
-  </body>
+
+
+    <div class="contact_form">
+      <form class="form">
+
+        <div class="row">
+          <div class="small-6 small-offset-3 column">
+            <input type="text" id="name" name="name" placeholder="Name">
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="small-6 small-offset-3 column">
+            <input type="text" id="email" name="email" placeholder="Email">
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="small-6 small-offset-3 column">
+            <textarea name="message" id="message" placeholder="Your message"></textarea>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="small-6 small-offset-3 column">
+            <input type="submit" id="submit" value="SEND">
+          </div>
+        </div>
+
+      </form>
+    </div>
+
+
+    <div class="contact_info">
+      <div class="row">
+        <div class="small-6 small-offset-3 column">
+          <p>(818) 861-9664<br>kevinyumdesign@gmail.com</p>
+          <img src="../_images/fb_icon.png">
+          <img src="../_images/github_icon.png">
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <script src='../_js/jquery-3.2.1.js'></script>
+  <script src="../_js/foundation.min.js"></script>
+  <script src="../_js/overlay.js"></script>
+</body>
+
 </html>

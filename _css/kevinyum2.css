@@ -1,0 +1,182 @@
+* {
+  padding: 0;
+  margin: 0;
+  max-width: 1920px;
+  max-height: 1080px;
+}
+
+
+/* ==============================
+   =========== FONTS ============
+   ============================== */
+
+@font-face {
+  font-family: "brandon";
+  src: url('../_fonts/brandon_grotesque/Brandon_reg.otf') format('truetype');
+} 
+@font-face {
+  font-family: "raleway";
+  src: url("../_fonts/raleway/Raleway-Regular.ttf") format('truetype');
+}
+@font-face {
+  font-family: "bebas";
+  src: url("../_fonts/BebasNeue.otf") format('truetype');
+}
+@font-face {
+  font-family: "museo";
+  src: url("../_fonts/MuseoSans_500.otf") format('truetype');
+}
+
+/* ================================
+   ========== BACKGROUND ==========
+   ================================ */
+body {
+  width: 100%;
+  height: 100%;
+  background-image: url(../_images/background.png);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+}
+
+/* ==========================
+   ========== NAV ===========
+   ========================== */
+
+.logo {
+  content: url(../_images/ky-logo2.png);
+  width: 50px;
+  margin: 20px;
+  float: left;
+}
+
+#navbtn {
+  float: right;
+  margin: 20px;
+}
+
+.overlay {
+  height: 0%;
+  width: 100%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: rgba(0,0,0,0.9);
+  overflow-y: hidden;
+  transition: 0.5s;
+}
+
+.overlay-content {
+    position: relative;
+    top: 25%;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.overlay a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 36px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+.overlay a:hover, .overlay a:focus {
+    color: #f1f1f1;
+}
+
+.overlay .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+}
+
+@media screen and (max-height: 450px) {
+  .overlay a {font-size: 20px}
+  .overlay .closebtn {
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
+  }
+}
+
+/* ================================
+   ========== CONTACTS ============
+   ================================ */
+
+/* ===== INTRO AND INFO ===== */
+.contact h1 {
+  font-family: bebas, sans-serif;
+  font-size: 6.4em;
+  line-height: 70px;
+  color: #d7e36a;
+}
+
+.contact p {
+  font-family: brandon, sans-serif;
+  font-size: 22px;
+  line-height: 25px;
+  color: #d7e36a;
+  letter-spacing: .5px;
+  word-spacing: .5px;
+}
+
+.contact_info p {
+  margin-top: 40px;
+  color: white;
+}
+
+.contact img {
+  width: 40px;
+  margin-right: 10px;
+}
+
+/* ===== FORM =====*/
+form input::-webkit-input-placeholder{
+     color:#999999;
+}
+form textarea::-webkit-input-placeholder{
+     color:#999999;
+}
+form input::-moz-input-placeholder{
+     color:#999999;
+}
+form textarea::-moz-input-placeholder{
+     color:#999999;
+}
+
+#name, #email, #message {
+  border: 1px solid #262626;
+  padding: 0px 10px 0px 10px;
+  color: white;
+  background-color: #3f3e3e;
+  box-shadow: rgba(0,0,0, 0.1) 0px 0px 8px;
+  -moz-box-shadow: rgba(0,0,0, 0.1) 0px 0px 8px;
+  -webkit-box-shadow: rgba(0,0,0, 0.1) 0px 0px 8px;
+}
+
+#message {
+  overflow-x: hidden;
+  height: 140px;
+  max-height: 140px;
+  padding-top: 10px;
+}
+
+#submit {
+  width: 160px;
+  height: 45px;
+  background-color: #d7e36a;
+  color: #262626;
+  font-family: raleway, sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  border: none;
+}
+
+
+
