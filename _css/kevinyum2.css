@@ -179,4 +179,63 @@ form textarea::-moz-input-placeholder{
 }
 
 
+/* ===============================
+   ========== ABOUT ME ===========
+   =============================== */
+
+.about {
+  background-image: url(../_images/about_me_pic_inksplash.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-color: firebrick;
+  background-blend-mode: lighten;
+  background-attachment: fixed;
+}
+
+.about_intro {
+  width: 50%;
+  padding: 30px;
+  margin: 60px;
+  margin-bottom: 150px;
+  background-color: rgba(0,0,0,.9);
+
+  box-shadow: 1px 1px 30px 9px;
+}
+
+.about_me {
+  letter-spacing: .4px;
+}
+
+.about_me h1 {
+  font-family: bebas, sans-serif;
+  font-size: 5.4em;
+  line-height: 50px;
+  color: #ffff00;
+  margin-top: 30px;
+}
+
+.about_me h2 {
+  font-family: raleway, sans-serif;
+  font-size: 1.6em;
+  line-height: 40px;
+  color: #ffff00;
+}
+
+.about_me p {
+  font-family: raleway, sans-serif;
+  font-size: 16px;
+  color: white;
+}
+
+
+
+
+/* ===============================
+   ========== PROJECTS ===========
+   =============================== */
+
+
+
+
 
