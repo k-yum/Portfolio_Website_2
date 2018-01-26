@@ -2,7 +2,6 @@
   padding: 0;
   margin: 0;
   max-width: 1920px;
-  max-height: 1080px;
 }
 
 
@@ -183,24 +182,38 @@ form textarea::-moz-input-placeholder{
    ========== ABOUT ME ===========
    =============================== */
 
-.about {
-  background-image: url(../_images/about_me_pic_inksplash.jpg);
+.about_bg {
+  background-image: url(../_images/about_pic_inksplash3.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center;
   background-color: firebrick;
   background-blend-mode: lighten;
   background-attachment: fixed;
+  overflow-x: hidden;
 }
 
 .about_intro {
-  width: 50%;
+  width: 100%;
   padding: 30px;
   margin: 60px;
   margin-bottom: 150px;
   background-color: rgba(0,0,0,.9);
+  box-shadow: 1px 1px 100px 10px;
+  border-radius: 10px
+  
+}
 
-  box-shadow: 1px 1px 30px 9px;
+#resume {
+  width: 200px;
+  margin: auto;
+  margin-top: 35%;
+  text-align: center;
+  padding: 12px;
+  font-family: raleway;
+  font-size: 13px;
+  background-color: yellow;
+  box-shadow: 1px 1px 100px 10px;
+  letter-spacing: 3px;
 }
 
 .about_me {
@@ -211,7 +224,7 @@ form textarea::-moz-input-placeholder{
   font-family: bebas, sans-serif;
   font-size: 5.4em;
   line-height: 50px;
-  color: #ffff00;
+  color: gray;
   margin-top: 30px;
 }
 
@@ -219,7 +232,7 @@ form textarea::-moz-input-placeholder{
   font-family: raleway, sans-serif;
   font-size: 1.6em;
   line-height: 40px;
-  color: #ffff00;
+  color: gray;
 }
 
 .about_me p {
@@ -228,12 +241,279 @@ form textarea::-moz-input-placeholder{
   color: white;
 }
 
+/* ===== How I Think ===== */
 
+.about_HIT {
+  width: 100%;
+  height: 760px;
+
+  position: relative;
+  background-color: lightgreen;
+}
+
+.ideas, .development, .code {
+  margin: 20px;
+  height: 440px;
+  padding-top: 20px;
+  color: #0981cd;
+}
+
+.about_HIT h1 {
+  text-align: center;
+  margin: 70px auto;
+  font-family: museo, sans-serif;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 3.2em;
+  color: #0981cd;
+  width: 30%;
+}
+
+.about_HIT h3 {
+  font-family: bebas, sans-serif;
+  font-size: 3.2em;
+  text-align: center;
+  color: #0981cd;
+  margin-top: 20px;
+}
+
+.about_HIT p {
+  font-family: brandon, sans-serif;
+  font-size: 18px;
+  margin: 20px;
+  padding: 10px;
+  color: grey;
+}
+
+#ideas_icon {
+  content: url(../_images/idea_icon.png);
+  width: 100px;
+  display: block;
+  margin: auto;
+}
+
+#development_icon {
+  content: url(../_images/development_icon.png);
+  width: 100px;
+  display: block;
+  margin: auto;
+}
+
+#code_icon {
+  content: url(../_images/code_icon.png);
+  width: 100px;
+  display: block;
+  margin: auto;
+}
+
+/* ===== about pic 2 ===== */
+.about_pic_2 {
+  width: 100%;
+  height: 1000px;
+  background-image: url(../_images/about_pic_inksplash.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: yellowgreen;
+  background-blend-mode: lighten;
+  background-attachment: fixed;
+}
 
 
 /* ===============================
    ========== PROJECTS ===========
    =============================== */
+
+.GW_bg {
+  width: 100%;
+  height: 100%;
+  background-image: url(../_images/project_gw_bg.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.ascend_bg {
+  width: 100%;
+  height: 100%;
+  background-image: url(../_images/project_ascend_bg.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.projects_GW, .projects_ascend {
+  width: 100%;
+  height: 100%;
+}
+
+.title {
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom:0;
+  z-index: -1;
+}
+
+.title h1 {
+  font-family: museo, sans-serif;
+  font-size: 4.6em;
+  color: #ffff00;
+  text-transform: uppercase;
+  letter-spacing: 20px;
+  word-spacing: 20px;
+  text-align: center;
+  position: relative;
+  top: 35%;
+}
+
+.title h3 {
+  font-family: brandon, sans-serif;
+  font-size: 20px;
+  position: relative;
+  top:35%;
+  text-align: center;
+  width: 10%;
+  margin: 10px auto 20px auto;
+  padding: 10px;
+  border: 1.5px solid #ffff00;
+  letter-spacing: 2px;
+  color: white;
+  text-decoration: none;
+  overflow: hidden;
+  display: block;
+  background-image: linear-gradient(to bottom, rgba(255,0,0,0) 50%, #ffff00 50%);
+  background-size: 100% 200%;
+  transition: background-position .25s;
+}
+
+.title h3:hover {
+  transition: all 0.25s ease-in;
+  background-position: 0% -100%;
+  color: black;
+}
+
+.pg_number {
+  width: 60px;
+  height: 50px;
+  padding-bottom: 55px;
+  text-align: center;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  margin: 20px;
+  color: white;
+  font-family: brandon;
+  font-size: 2.2em;
+}
+
+/* ===== Showcase ===== */
+
+.GW_intro, .ascend_intro {
+  width: 62.64%;
+  margin: auto;
+}
+
+.GW_intro h1, .ascend_intro h1 {
+  font-family: museo, sans-serif;
+  font-size: 3.4em;
+  letter-spacing: 13px;
+  word-spacing: 10px;
+  text-transform: uppercase;
+  color: #ffff00;
+  text-align: center;
+}
+
+.project_yearService {
+  margin: 30px 0 30px 5px;
+  
+}
+
+.GW_intro h3, .ascend_intro h3, .GW_intro p, .ascend_intro p {
+  font-size: 18px;
+    color: white;
+}
+
+.GW_intro h3, .ascend_intro h3 {
+  font-family: museo,sans-serif;
+  display: inline-block;
+  font-weight: bold;
+
+  margin-right: 100px;
+}
+
+#work_in_progress {
+  text-transform: uppercase;
+  font-weight: 100;
+  color: red;
+  margin-right: 0px;
+}
+
+.space {
+  visibility: hidden;
+}
+
+.GW_intro p, .ascend_intro p {
+  font-family: brandon,sans-serif;
+  font-weight: lighter;
+}
+
+#summary_GW, #summary_ascend {
+  margin:0 0 70px 5px;
+  
+}
+
+.project_web_pic img{
+  width: 90%;
+  display: block;
+  margin: auto;
+}
+
+.showcase_pics{
+  width: 70%;
+  height: 100%;
+  margin: 100px auto;
+}
+
+/*.showcase_pic {
+  content: url(../_images/gw_showcase/gw_sc_2.png);
+  width: 80%;
+  margin: auto;
+}
+
+.showcase_pic2 {
+  content: url(../_images/gw_showcase/gw_sc_3.png);
+  width: 80%;
+  margin: auto;
+}
+
+.showcase_pic3 {
+  content: url(../_images/gw_showcase/gw_sc_4.png);
+  width: 80%;
+  margin: auto;
+}
+
+.showcase_pic4 {
+  content: url(../_images/gw_showcase/gw_sc_5.png);
+  width: 80%;
+  margin: auto;
+}*/
+
+.footer {
+  position: relative;
+  width:70%;
+  display: block;
+  margin: 100px auto;
+  text-align: center;
+}
+
+.footer h2 {
+  display: inline-block;
+  margin: 0 30px 0 30px;
+  font-family: museo,sans-serif;
+  font-size: 30px;
+  color: #ffff00;
+  padding: 10px;
+  text-transform: uppercase;
+  letter-spacing: 60px;
+}
+
+
 
 
 
