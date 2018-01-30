@@ -1,9 +1,16 @@
 * {
   padding: 0;
   margin: 0;
-  max-width: 1920px;
 }
 
+a {
+  text-decoration: none;
+  color: white;
+}
+
+a:hover {
+  color: black;
+}
 
 /* ==============================
    =========== FONTS ============
@@ -196,7 +203,6 @@ form textarea::-moz-input-placeholder{
   width: 100%;
   padding: 30px;
   margin: 60px;
-  margin-bottom: 150px;
   background-color: rgba(0,0,0,.9);
   box-shadow: 1px 1px 100px 10px;
   border-radius: 10px
@@ -204,23 +210,30 @@ form textarea::-moz-input-placeholder{
 }
 
 #resume {
-  width: 200px;
+  width: 100%;
   margin: auto;
-  margin-top: 35%;
   text-align: center;
-  padding: 12px;
+  padding: 22px;
   font-family: raleway;
-  font-size: 13px;
-  background-color: yellow;
-  box-shadow: 1px 1px 100px 10px;
-  letter-spacing: 3px;
+  font-size: 17px;
+  background-color: grey;
+  box-shadow: 1px 1px 100px 1px;
+  border-radius: 10px;
+  color: black;
+  position: relative;
+  left: 40%;
+  top:250px;
+}
+
+#resume:hover {
+  color: firebrick;
 }
 
 .about_me {
   letter-spacing: .4px;
 }
 
-.about_me h1 {
+.about_me h1, .hire h1 {
   font-family: bebas, sans-serif;
   font-size: 5.4em;
   line-height: 50px;
@@ -235,7 +248,7 @@ form textarea::-moz-input-placeholder{
   color: gray;
 }
 
-.about_me p {
+.about_me p, .hire p {
   font-family: raleway, sans-serif;
   font-size: 16px;
   color: white;
@@ -306,8 +319,8 @@ form textarea::-moz-input-placeholder{
   margin: auto;
 }
 
-/* ===== about pic 2 ===== */
-.about_pic_2 {
+/* ===== hire_me_page ===== */
+.hire_bg {
   width: 100%;
   height: 1000px;
   background-image: url(../_images/about_pic_inksplash.jpg);
@@ -316,6 +329,37 @@ form textarea::-moz-input-placeholder{
   background-color: yellowgreen;
   background-blend-mode: lighten;
   background-attachment: fixed;
+}
+
+.hire{
+  width:80%;
+  margin: auto;
+  position: relative;
+  top: 200px;
+}
+
+.hire h1 {
+  color: red;
+  text-align: center;
+}
+
+.hire p {
+  color: grey;
+  font-family: bebas;
+  font-size: 3.3em;
+  color: red;
+  text-align: center;
+}
+
+.hire a {
+  width: 10%;
+  margin: auto;
+  display: block;
+  text-align: center;
+  background-color: red;
+  padding:10px;
+  font-family: brandon, sans-serif;
+  font-size: 18px;
 }
 
 
