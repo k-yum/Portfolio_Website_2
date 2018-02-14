@@ -3,9 +3,14 @@
   margin: 0;
 }
 
+html {
+  overflow-x: hidden;
+}
+
 a {
   text-decoration: none;
   color: white;
+  z-index: 100;
 }
 
 a:hover {
@@ -21,6 +26,10 @@ a:hover {
   src: url('../_fonts/brandon_grotesque/Brandon_reg.otf') format('truetype');
 } 
 @font-face {
+  font-family: "brandonBLD";
+  src: url('../_fonts/brandon_grotesque/Brandon_bld.otf') format('truetype');
+} 
+@font-face {
   font-family: "raleway";
   src: url("../_fonts/raleway/Raleway-Regular.ttf") format('truetype');
 }
@@ -32,11 +41,24 @@ a:hover {
   font-family: "museo";
   src: url("../_fonts/MuseoSans_500.otf") format('truetype');
 }
+@font-face {
+  font-family: "dogRough";
+  src: url("../_fonts/DogRough.otf") format('truetype');
+}
+@font-face {
+  font-family: "inkPen";
+  src: url("../_fonts/InkPen.otf") format('truetype');
+}
+@font-face {
+  font-family: "ssbld";
+  src: url("../_fonts/sansserifbldflf.otf") format('truetype');
+}
+
 
 /* ================================
    ========== BACKGROUND ==========
    ================================ */
-body {
+/*body {
   width: 100%;
   height: 100%;
   background-image: url(../_images/background.png);
@@ -44,7 +66,75 @@ body {
   background-attachment: fixed;
   background-size: cover;
   background-position: center;
+}*/
+
+body {
+  width: 100%;
+  height: 100%;
+  background-color: #0F0E0E;
 }
+
+/* =============================
+   ========= HOME PAGE =========
+   ============================= */
+
+#face_img {
+  position: relative;
+  top: -110px;
+  margin-bottom: -110px;
+  z-index: -100;
+}
+
+
+/* home intro */
+
+.intro {
+  text-align: left;
+  margin-top: 10%;
+}
+
+.intro h1 {
+  font: 9.6em/130px bebas, sans-serif;
+  color: greenyellow;
+}
+
+.intro p {
+  font: 1.5em raleway, sans-serif;
+  color: white;
+}
+
+.nav-list {
+  width: 25%;
+  height: auto;
+  position: absolute;
+  right: 5%;
+  top: 35%;
+}
+
+.nav_fullpage {
+  text-align: right;
+  list-style-type: none;
+  font: 14px "brandonBLD", sans-serif;
+  font-weight: bold;
+  letter-spacing: 1px;
+  color: white;
+  text-transform: uppercase;
+}
+
+.nav_fullpage ul {
+  margin-top: 4%;
+}
+
+.nav_fullpage a{
+  text-decoration: none;
+  color: white;
+  margin: 30px;
+}
+
+.home li:hover {
+  color: black;
+}
+
 
 /* ==========================
    ========== NAV ===========
@@ -55,9 +145,11 @@ body {
   width: 50px;
   margin: 20px;
   float: left;
+  z-index: 9999;
 }
 
 #navbtn {
+  display: none;
   float: right;
   margin: 20px;
 }
@@ -66,7 +158,7 @@ body {
   height: 0%;
   width: 100%;
   position: fixed;
-  z-index: 1;
+  z-index: 100;
   top: 0;
   left: 0;
   background-color: rgba(0,0,0,0.9);
@@ -108,6 +200,15 @@ body {
     font-size: 40px;
     top: 15px;
     right: 35px;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  #navbtn {
+    display: block;
+  }
+  .nav_fullpage {
+    display: none;
   }
 }
 
@@ -188,52 +289,54 @@ form textarea::-moz-input-placeholder{
 /* ===============================
    ========== ABOUT ME ===========
    =============================== */
+.about_bg_hero {
+  width: 100%;
+  height: 100vh;
+  display: block;
+  position: relative;
+  background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) );
 
-.about_bg {
+}
+
+.about_bg_hero:after {
+  content: "";
   background-image: url(../_images/about_pic_inksplash3.jpg);
-  background-repeat: no-repeat;
+  background-position: center;
   background-size: cover;
-  background-color: firebrick;
-  background-blend-mode: lighten;
-  background-attachment: fixed;
-  overflow-x: hidden;
+  opacity: 0.85;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1;   
+}
+
+.about_hero_head {
+  width:100%;
+}
+
+.about_hero_head2 {
+   margin-top: 80px;
+}
+
+.about_info {
+  background-color: white;
 }
 
 .about_intro {
   width: 100%;
-  padding: 30px;
-  margin: 60px;
-  background-color: rgba(0,0,0,.9);
-  box-shadow: 1px 1px 100px 10px;
-  border-radius: 10px
-  
-}
-
-#resume {
-  width: 100%;
-  margin: auto;
-  text-align: center;
-  padding: 22px;
-  font-family: raleway;
-  font-size: 17px;
-  background-color: grey;
-  box-shadow: 1px 1px 100px 1px;
-  border-radius: 10px;
-  color: black;
-  position: relative;
-  left: 40%;
-  top:250px;
-}
-
-#resume:hover {
-  color: firebrick;
 }
 
 .about_me {
+  margin: 60px 0 100px 0px;
+}
+
+.about_me,  .about_hero_head {
   letter-spacing: .4px;
 }
 
-.about_me h1, .hire h1 {
+.hire h1 {
   font-family: bebas, sans-serif;
   font-size: 5.4em;
   line-height: 50px;
@@ -241,27 +344,51 @@ form textarea::-moz-input-placeholder{
   margin-top: 30px;
 }
 
+.about_me h1 {
+  color: firebrick;
+  font-family: dogRough, sans-serif;
+  font-size: 8.5em;
+  text-align: center;
+  
+}
+
 .about_me h2 {
   font-family: raleway, sans-serif;
   font-size: 1.6em;
   line-height: 40px;
-  color: gray;
+  color: gray;  
+}
+
+#about_name {
+  color: firebrick;
+}
+
+.about_hero_head h2 {
+  color: black;
+  font-family: bebas, sans-serif;
+  font-weight: lighter;
+  font-size: 5.8em;
+  color: white;
+  text-align: left;
+  letter-spacing: -2px;
+  word-spacing: 4px;
+  line-height: 100px
 }
 
 .about_me p, .hire p {
   font-family: raleway, sans-serif;
   font-size: 16px;
-  color: white;
+  font-weight: bold;
+  color: grey;
 }
 
 /* ===== How I Think ===== */
 
 .about_HIT {
   width: 100%;
-  height: 760px;
-
-  position: relative;
-  background-color: lightgreen;
+  height: 630px;
+  padding-top: 10px;
+  background-color: azure;
 }
 
 .ideas, .development, .code {
@@ -283,10 +410,10 @@ form textarea::-moz-input-placeholder{
 }
 
 .about_HIT h3 {
-  font-family: bebas, sans-serif;
+  font-family: dogRough, sans-serif;
   font-size: 3.2em;
   text-align: center;
-  color: #0981cd;
+  color: black;
   margin-top: 20px;
 }
 
@@ -299,21 +426,21 @@ form textarea::-moz-input-placeholder{
 }
 
 #ideas_icon {
-  content: url(../_images/idea_icon.png);
+  content: url(../_images/icons/idea.png);
   width: 100px;
   display: block;
   margin: auto;
 }
 
 #development_icon {
-  content: url(../_images/development_icon.png);
+  content: url(../_images/icons/monitor.png);
   width: 100px;
   display: block;
   margin: auto;
 }
 
 #code_icon {
-  content: url(../_images/code_icon.png);
+  content: url(../_images/icons/code.png);
   width: 100px;
   display: block;
   margin: auto;
@@ -321,58 +448,63 @@ form textarea::-moz-input-placeholder{
 
 /* ===== hire_me_page ===== */
 .hire_bg {
-  width: 100%;
-  height: 1000px;
-  background-image: url(../_images/about_pic_inksplash.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-color: yellowgreen;
-  background-blend-mode: lighten;
-  background-attachment: fixed;
+
 }
 
 .hire{
   width:80%;
   margin: auto;
   position: relative;
-  top: 200px;
+
 }
 
 .hire h1 {
-  color: red;
+  margin-top: 80px;
+  color: firebrick;
+  text-align: center;
+  font-family: dogRough, sans-serif;
+  line-height: 100px;
+}
+
+.hire h2 {
+  width: 100%;
+  font-family: bebas;
+  font-size: 2.8em;
+  color: firebrick;
   text-align: center;
 }
 
-.hire p {
-  color: grey;
-  font-family: bebas;
-  font-size: 3.3em;
-  color: red;
+.hire ul {
+  width: 94%;
   text-align: center;
+}
+
+.hire li {
+  display: inline-block;
 }
 
 .hire a {
-  width: 10%;
-  margin: auto;
-  display: block;
+  width:250px;
   text-align: center;
-  background-color: red;
-  padding:10px;
-  font-family: brandon, sans-serif;
-  font-size: 18px;
+  background-color: firebrick;
+  display: block;
+  font-family: brandonbld, sans-serif;
+  font-size: 20px;
+  padding: 10px;
+  letter-spacing: 1px;
 }
 
+#wink_pic img {
+  background-color: firebrick;
+  background-blend-mode: screen;
+}
 
 /* ===============================
    ========== PROJECTS ===========
    =============================== */
 
 .GW_bg {
-  width: 100%;
-  height: 100%;
-  background-image: url(../_images/project_gw_bg.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
+  
 }
 
 .ascend_bg {
@@ -388,13 +520,25 @@ form textarea::-moz-input-placeholder{
   height: 100%;
 }
 
-.title {
+.title_GW {
   position: absolute;
   top: 0; left: 0; right: 0; bottom:0;
   z-index: -1;
+  background-image: url(../_images/project_gw_bg.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
-.title h1 {
+.title_ascend {
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom:0;
+  z-index: -1;
+  background-image: url(../_images/project_ascend_bg.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.title_GW h1, .title_ascend h1 {
   font-family: museo, sans-serif;
   font-size: 4.6em;
   color: #ffff00;
@@ -406,7 +550,7 @@ form textarea::-moz-input-placeholder{
   top: 35%;
 }
 
-.title h3 {
+.title_GW a, .title_ascend a{
   font-family: brandon, sans-serif;
   font-size: 20px;
   position: relative;
@@ -426,7 +570,7 @@ form textarea::-moz-input-placeholder{
   transition: background-position .25s;
 }
 
-.title h3:hover {
+.title_GW a:hover, .title_ascend a:hover{
   transition: all 0.25s ease-in;
   background-position: 0% -100%;
   color: black;
@@ -447,6 +591,52 @@ form textarea::-moz-input-placeholder{
 }
 
 /* ===== Showcase ===== */
+
+.showcase_ascend {
+  width: 100%;
+  height: 100%;
+  display: block;
+  position: relative;
+}
+
+.showcase_ascend:after {
+  content: "";
+  background-image: url(../_images/project_ascend_bg.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  opacity: 0.4;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1;   
+  background-blend-mode: luminosity;
+  background-color: grey;
+}
+
+.showcase_GW {
+  width: 100%;
+  height: 100%;
+  display: block;
+  position: relative;
+}
+
+.showcase_GW:after {
+  content: "";
+  background-image: url(../_images/project_GW_bg.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  opacity: 0.4;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1;   
+  background-blend-mode: luminosity;
+  background-color: grey;
+}
 
 .GW_intro, .ascend_intro {
   width: 62.64%;
@@ -470,26 +660,28 @@ form textarea::-moz-input-placeholder{
 
 .GW_intro h3, .ascend_intro h3, .GW_intro p, .ascend_intro p {
   font-size: 18px;
-    color: white;
+  color: white;
 }
 
 .GW_intro h3, .ascend_intro h3 {
   font-family: museo,sans-serif;
   display: inline-block;
   font-weight: bold;
-
-  margin-right: 100px;
+  margin: 30px 100px 0 0;
 }
 
-#work_in_progress {
+.launch_site {
   text-transform: uppercase;
   font-weight: 100;
   color: red;
   margin-right: 0px;
+  background-color: yellow;
+  padding: 0 3px 0 3px;
+  color: black;
 }
 
 .space {
-  visibility: hidden;
+  visibility:hidden;
 }
 
 .GW_intro p, .ascend_intro p {
@@ -498,7 +690,7 @@ form textarea::-moz-input-placeholder{
 }
 
 #summary_GW, #summary_ascend {
-  margin:0 0 70px 5px;
+  margin: 60px 0 100px 5px;
   
 }
 

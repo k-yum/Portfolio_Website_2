@@ -1,0 +1,81 @@
+<!doctype html>
+<html>
+
+<head>
+
+</head>
+
+
+<body>
+
+  <div class="home">
+
+    <!-- NAV -->
+    <div class="row">
+      <nav class="row full-width">
+        <a href="#!/">
+          <div class="logo"></div>
+        </a>
+        <div class="nav_fullpage">
+          <ul class="clearfix">
+            <a href="#!/about">About</a>
+            <a href="#!/projects">Projects</a>
+            <a href="#!/contact">Contact</a>
+          </ul>
+        </div>
+
+        <div id="myNav" class="overlay">
+          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+          <div class="overlay-content">
+            <a href="#!/about">About</a>
+            <a href="#!/projects">Projects</a>
+            <a href="#!/contact">Contact</a>
+          </div>
+        </div>
+
+        <span style="font-size:40px;cursor:pointer;color:white" onclick="openNav()" id="navbtn">&#9776;</span>
+      </nav>
+    </div>
+
+    <div class="row">
+
+      <div class="medium-6 columns">
+        <div class="intro">
+          <h1>DISPLAY<br>YOUR<br>VISION</h1>
+          <p> Web Developer &middot; Kevin Yum</p>
+        </div>
+      </div>
+      <div class="medium-6 columns">
+        <div id="face_img" class="animated fadeIn">
+          <img src="../_images/face_lc.png" />
+        </div>
+      </div>
+    </div>
+
+    <!--div class="nav-list">
+          <ul>
+
+            <a href="#!/about">
+              <li class="glitch" data-text="ABOUT">ABOUT</li>
+            </a>
+            <a href="#!/projects">
+              <li class="glitch" data-text="PROJECTS">PROJECTS</li>
+            </a>
+            <a href="#!/contact">
+              <li class="glitch" data-text="CONTACTS">CONTACTS</li>
+            </a>
+          </ul>
+
+        </div-->
+
+  </div>
+
+  <script src='_js/jquery-3.2.1.js'></script>
+  <script src="_js/foundation.min.js"></script>
+  <script src="_js/overlay.js"></script>
+  <script src="_js/angular.min.js"></script>
+
+
+</body>
+
+</html>

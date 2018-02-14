@@ -11,54 +11,127 @@
   <link href="../_css/kevinyum2.css" type="text/css" rel="stylesheet">
 </head>
 
-<body class="about_bg">
+<body>
 
-  <div class="about">
-    <nav class="row full-width">
-      <div class="logo">
-        <a href="../index.html"></a>
-      </div>
-
-      <div id="myNav" class="overlay">
-        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-        <div class="overlay-content">
-          <a href="about.html">About</a>
-          <a href="projects_GW.html">Projects</a>
-          <a href="contact.html">Contact</a>
+  <div class="about_bg_hero">
+    <div class="row">
+      <nav class="row full-width">
+        <a href="#!/">
+          <div class="logo"></div>
+        </a>
+        <div class="nav_fullpage">
+          <ul class="clearfix">
+            <a href="#!/about">About</a>
+            <a href="#!/projects">Projects</a>
+            <a href="#!/contact">Contact</a>
+          </ul>
         </div>
-      </div>
 
-      <span style="font-size:40px;cursor:pointer;color:white" onclick="openNav()" id="navbtn">&#9776;</span>
-    </nav>
-
-    <div class="row full-width">
-      <div class="medium-6 columns">
-
-        <div class="about_intro">
-          <div class="row">
-
-            <div class="about_me">
-              <div class="medium-12 columns">
-                <h1>ABOUT ME</h1>
-                <h2>The name's Yum, Kevin Yum. <br>I'm a UX/UI designer and Front End Developer</h2>
-                <p>I like to make ideas into reality! The crazier, the harder work. The more creative, the more excited it get. The more complex, the more tears I shed. Though tears may fall, I actually prefer challenging problems. I am still a padawan when it comes to web design/development, so I welcome any opportunites that may help me grow into a jedi master of web development. Won’t you be my yoda?<br><br>When I’m not coding or making star wars references, I like to shoot some hoops, play some tunes, or pig out on some tacos!
-              </div>
-            </div>
-
+        <div id="myNav" class="overlay">
+          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+          <div class="overlay-content">
+            <a href="#!/about">About</a>
+            <a href="#!/projects">Projects</a>
+            <a href="#!/contact">Contact</a>
           </div>
         </div>
+
+        <span style="font-size:40px;cursor:pointer;color:white" onclick="openNav()" id="navbtn">&#9776;</span>
+      </nav>
+    </div>
+
+
+    <div class="row">
+      <div class="about_hero_head">
+        <div class="about_hero_head2">
+          <h2>The name's Yum,<br> <span id="about_name">Kevin Yum</span><br>I'm a UX/UI designer and <br>Front End Developer</h2>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="about_info">
+
+    <div class="about_intro">
+    <div class="row full-width">
+      <div class="medium-6 medium-offset-3 columns">
+
+        
+
+          <div class="about_me">
+
+            <h1>ABOUT ME</h1>
+            <p>I like to make ideas into reality! The crazier, the harder work. The more creative, the more excited it get. The more complex, the more tears I shed. Though tears may fall, I actually prefer challenging problems. I am still a padawan when it comes to web design/development, so I welcome any opportunites that may help me grow into a jedi master of web development. Won’t you be my yoda?<br><br>When I’m not coding or making star wars references, I like to shoot some hoops, play some tunes, or pig out on some tacos!
+          </div>
+
+        
       </div>
 
-      <div class="medium-6 columns">
-          <a href="../_downloads/Kevin%20Yum%20-%20Resume2018.pdf" download target="_blank" id="resume">DOWNLOAD RESUME </a>
+    </div>
+    </div>
+
+    <div class="about_HIT">
+      <div class="row">
+
+        <div class="row">
+
+          <div class="medium-4 columns">
+            <div class="ideas">
+              <span id="ideas_icon"></span>
+              <h3>IDEAS</h3>
+              <p>I collaborate with my clients to help our ideas grow into an ideal and well-planned design. My goal is to make sure clients are satisfied and proud of their design.</p>
+            </div>
+          </div>
+
+          <div class="medium-4 columns">
+            <div class="development">
+              <span id="development_icon"></span>
+              <h3>DEVELOPMENT</h3>
+              <p>I plan out the structure of the website, focusing on responsive web design, intuitive UI, and creative interactions fit for the client's needs. I strive to create memorable interactions for the users to help your site grow.</p>
+            </div>
+          </div>
+
+          <div class="medium-4 columns">
+            <div class="code">
+              <span id="code_icon"></span>
+              <h3>CODE</h3>
+              <p>I design with multiple browsers -- Chrome, Firefox, Safari, Edge -- in mind on multiple platforms -- PC, Mac, tablets, phones. I like to code from scratch using HTML, CSS, and JavaScript using front-end frameworks like Foundation and Bootstrap, but I can also create sites using Wordpress. I also have expertise in programming for back-end using PHP and MySQL.</p>
+            </div>
+          </div>
+
+        </div>
+
       </div>
     </div>
 
+
+
+    <div class="hire_bg">
+    <div class="row">
+
+      <div class="hire">
+        <h1>Want to hire me or work together?</h1>
+        <h2>Feel free to contact me!</h2>
+        <ul class="clearfix">
+          <li><a href="contact.html" id="contact_moi">Contact Moi</a></li>
+          <li><a href="../_downloads/Kevin%20Yum%20-%20Resume2018.pdf" download target="_blank" id="resume">Download Resume</a></li>
+        </ul>
+      </div>
+
+    </div>
+    
+    <div class="row full-width" id="wink_pic">
+      <img src="../_images/about_me_pic_inksplash1V1.jpg"/>
+    </div>
+    </div>
   </div>
+
 
   <script src='../_js/jquery-3.2.1.js'></script>
   <script src="../_js/foundation.min.js"></script>
   <script src="../_js/overlay.js"></script>
+  <script src="../_js/typewriter.js"></script>
 </body>
 
 </html>
