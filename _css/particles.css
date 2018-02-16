@@ -1,0 +1,13 @@
+/* ---- particles.js container ---- */
+
+#particles-js {
+  background: red;
+  height: 100vh;
+}
+
+canvas {
+  display: block;
+  height: 100vh;
+  position: fixed;
+  z-index: -999;
+}
