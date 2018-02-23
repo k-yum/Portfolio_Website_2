@@ -9,10 +9,63 @@
  */
 
 .animated {
+  -webkit-animation-duration: 2s;
+  animation-duration: 2s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
+.animated_fast {
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
+.animated_slow {
+  -webkit-animation-duration: 3.2s;
+  animation-duration: 3.2s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
+.animated_super_slow {
   -webkit-animation-duration: 5s;
   animation-duration: 5s;
   -webkit-animation-fill-mode: both;
   animation-fill-mode: both;
+}
+
+.animated_fast2 {
+  -webkit-animation-duration: 2s;
+  animation-duration: 2s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  animation-delay: .2s;
+}
+
+.animated_fast3 {
+  -webkit-animation-duration: 2s;
+  animation-duration: 2s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  animation-delay: .4s;
+}
+
+.animated_fast4 {
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  animation-delay: 1.6s;
+}
+
+.animated_delay {
+  -webkit-animation-duration: 5s;
+  animation-duration: 5s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  animation-delay: 2.3s;
 }
 
 .animated.infinite {
@@ -3492,3 +3545,38 @@
   -webkit-animation-name: slideOutUp;
   animation-name: slideOutUp;
 }
+
+.type { 
+  white-space: nowrap;
+  overflow: hidden;
+  width: 3em;
+  animation: type 4s steps(60, end); 
+  animation-duration: 1s;
+}
+.type-delay1 { 
+  white-space: nowrap;
+  overflow: hidden;
+  width: 3em;
+  animation: type2 4s steps(60, end);
+  animation-duration: 1s;
+}
+.type-delay2 { 
+  white-space: nowrap;
+  overflow: hidden;
+  width: 3em;
+  animation: type2 12s steps(60, end);
+  animation-duration: 1s;
+
+}
+
+@keyframes type {
+  from {
+    width: 0;
+  }
+}
+
+@keyframes type2{
+  0%{width: 0;}
+  50%{width: 0;}
+  100%{ width: 100; } 
+} 

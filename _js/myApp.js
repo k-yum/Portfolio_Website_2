@@ -1,4 +1,4 @@
-var myApp = angular.module('myApp', ['ngRoute']);
+var myApp = angular.module('myApp', ['ngRoute', 'ngAnimate', 'angular-typed']);
 
 myApp.config(function ($routeProvider){
   
@@ -59,3 +59,4 @@ myApp.controller('ascendShowcaseController', function($scope){
 myApp.controller('contactController', function($scope){
 
 });
+

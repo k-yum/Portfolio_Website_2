@@ -3,6 +3,10 @@
   margin: 0;
 }
 
+::-webkit-scrollbar { 
+    display: none; 
+}
+
 html {
   overflow-x: hidden;
 }
@@ -138,10 +142,28 @@ body {
   text-decoration: none;
   color: white;
   margin: 30px;
+  transition: all 0.25s ease-in;
 }
 
-.home li:hover {
-  color: black;
+.nav_fullpage a:hover{
+  transition: all 0.25s ease-in;
+}
+
+@media (-webkit-min-device-pixel-ratio:0) {
+  .nav_fullpage a {
+    background-color: white;
+    background-image: -webkit-linear-gradient(left, firebrick 50%, transparent 50%);
+    background-position: 100% 0;
+    background-size: 200% 200%;
+    color: transparent;
+    -webkit-transition:.25s;
+    -webkit-background-clip: text;
+  }
+  .nav_fullpage a:hover {
+    background-position: 0 0;
+    color: transparent;
+    transition: .25s 0;
+  }
 }
 
 
@@ -162,6 +184,7 @@ body {
   top: 0px;
   position: absolute;
   z-index: 999;
+
 }
 
 #navbtn {
@@ -305,6 +328,19 @@ form textarea::-moz-input-placeholder{
 /* ===============================
    ========== ABOUT ME ===========
    =============================== */
+
+
+.about_parent {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+
+}
+
+.about_child {
+
+}
+
 .about_bg_hero {
   width: 100%;
   height: 100vh;
@@ -330,10 +366,7 @@ form textarea::-moz-input-placeholder{
 
 .about_hero_head {
   width:100%;
-}
-
-.about_hero_head2 {
-   margin-top: 80px;
+  margin-top: 80px;
 }
 
 .about_info {
@@ -379,7 +412,7 @@ form textarea::-moz-input-placeholder{
   color: firebrick;
 }
 
-.about_hero_head h2 {
+#typed, #typed-strings {
   color: black;
   font-family: bebas, sans-serif;
   font-weight: lighter;
@@ -389,6 +422,23 @@ form textarea::-moz-input-placeholder{
   letter-spacing: -2px;
   word-spacing: 4px;
   line-height: 100px
+}
+
+.typed-cursor {
+  opacity: 0;
+}
+
+.scroll-for-more {
+  position: absolute;
+  bottom: 0px;
+  right:50%;
+}
+
+.scroll-for-more h3{
+  text-align: center;
+  font-family: "brandonBLD", sans-serif;
+  font-size: 17px;
+  color:black;
 }
 
 .about_me p, .hire p {
@@ -404,7 +454,7 @@ form textarea::-moz-input-placeholder{
   width: 100%;
   height: 630px;
   padding-top: 10px;
-  background-color: azure;
+  background-color: #F0F0F0;
 }
 
 .ideas, .development, .code {
@@ -464,7 +514,7 @@ form textarea::-moz-input-placeholder{
 
 /* ===== hire_me_page ===== */
 .hire_bg {
-
+  padding-bottom: 100px;
 }
 
 .hire{
@@ -502,12 +552,23 @@ form textarea::-moz-input-placeholder{
 .hire a {
   width:250px;
   text-align: center;
-  background-color: firebrick;
+  background-color: white;
+  color: firebrick;
   display: block;
   font-family: brandonbld, sans-serif;
   font-size: 20px;
   padding: 10px;
   letter-spacing: 1px;
+  background-image: linear-gradient(to bottom, rgba(255,0,0,0) 50%, firebrick 50%);
+  background-size: 100% 200%;
+  transition: background-position .25s;
+  border: 5px solid firebrick;
+}
+
+.hire a:hover{
+  transition: all 0.25s ease-in;
+  background-position: 0% -100%;
+  color: white;
 }
 
 #wink_pic img {
@@ -768,7 +829,27 @@ canvas {
   height: 100%;
 }
 
+/* =====================================
+   ============ ANIMATIONS =============
+   ===================================== */
+/*
+.main.ng-enter {
+  transition: 0.5s linear all;
+  opacity: 0;
+}
 
+.main.ng-enter.ng-enter-active {
+  opacity: 1;
+}*/
+
+/* now the element will fade out before it is removed from the DOM */
+/*.main.ng-leave {
+  transition:0.5s linear all;
+  opacity:1;
+}
+.main.ng-leave.ng-leave-active {
+  opacity:0;
+}*/
 
 
 
