@@ -5,7 +5,7 @@ $(document).ready(function() {
   $('.icons').css('opacity', 0);
   $('.HIT_info').css('opacity',0);
   $('.hire').css('opacity', 0);
-
+  
   $('.about_me').waypoint(function() {
     $('.about_me').addClass('animated_fast fadeInLeft');
   }, {
