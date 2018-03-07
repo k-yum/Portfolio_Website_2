@@ -9,8 +9,8 @@
   <link rel="icon" href="_images/ky-logo.png">
   <link href="../_css/foundation.css" rel="stylesheet">
   <link href="../_css/kevinyum2.css" type="text/css" rel="stylesheet">
-  <script src="../_js/jquery.waypoints.min.js"></script>
-  <script src="../_js/waypoint_app.js"></script>
+  <link href="../_css/overlay-hamburger.css" type="text/css" rel="stylesheet">
+
 </head>
 
 <body>
@@ -30,20 +30,20 @@
           </ul>
         </div>
 
-        <div id="myNav" class="overlay">
-          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-          <div class="overlay-content">
-            <a href="#!/about">About</a>
-            <a href="#!/projects">Projects</a>
-            <a href="#!/contact">Contact</a>
-          </div>
+        <div id="toggle" class="button_container"><span class="top"></span><span class="middle"></span><span class="bottom"></span></div>
+        <div id="overlay" class="overlay">
+          <nav class="overlay-menu">
+            <ul>
+              <li><a href="#!/about">About</a></li>
+              <li><a href="#!/projects">Projects</a></li>
+              <li><a href="#!/contact">Contact</a></li>
+            </ul>
+          </nav>
         </div>
-
-        <span style="font-size:40px;cursor:pointer;color:white" onclick="openNav()" id="navbtn">&#9776;</span>
       </nav>
     </div>
     
-    <span id="back-to-top"><a href="#top">&#11145;</a></span>
+    <span id="back-to-top"><a href="#top" title="back to top"></a></span>
 
 
     <div class="row">
@@ -59,29 +59,32 @@
           <h3 ><a href="http://ascendbkc.org/" target="_blank" class="launch_site">Still a work in progress</a><br><span class="space">a</span></h3>
         </div>
         <p id="summary_ascend">Ascend BKC is a Korean-American college ministry and community with a vision to help others experience God's love. This website was built using WordPress.</p>
+        <h4 id="back-to-projects"><a href="#!/projects">&#8249; Back to Projects</a></h4>
       </div>
     </div>
 
     <div class="project_web_pic">
-      <img src="../_images/ascendShowcase.png">
+      <img src="_images/ascendShowcase.png">
     </div>
 
     <div class="showcase_pics">
-      <img src="../_images/_ascend_showcase/ascend_sc1.png">
-      <img src="../_images/_ascend_showcase/ascend_sc2.png">
-      <img src="../_images/_ascend_showcase/ascend_sc3.png">
-      <img src="../_images/_ascend_showcase/ascend_sc4.png">
-      <img src="../_images/_ascend_showcase/ascend_sc5.png">
-      <img src="../_images/_ascend_showcase/ascend_sc6.png">
+      <img src="_images/_ascend_showcase/ascend_sc1.png">
+      <img src="_images/_ascend_showcase/ascend_sc2.png">
+      <img src="_images/_ascend_showcase/ascend_sc3.png">
+      <img src="_images/_ascend_showcase/ascend_sc4.png">
+      <img src="_images/_ascend_showcase/ascend_sc5.png">
+      <img src="_images/_ascend_showcase/ascend_sc6.png">
     </div>
 
 
   </div>
+  
+  
 
-  <script src='../_js/jquery-3.2.1.js'></script>
-  <script src="../_js/foundation.min.js"></script>
-  <script src="../_js/overlay.js"></script>
-  <script src="../_js/smooth_scroll.js"></script>
+  <script src='_js/jquery-3.2.1.js'></script>
+  <script src="_js/foundation.min.js"></script>
+  <script src="_js/overlay.js"></script>
+  <script src="_js/smooth_scroll.js"></script>
   
 
 </body>

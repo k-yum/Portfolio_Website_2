@@ -10,6 +10,8 @@
   <link href="../_css/foundation.css" rel="stylesheet">
   <link href="../_css/kevinyum2.css" type="text/css" rel="stylesheet">
   <link href="../_css/animate.css" type="text/css" rel="stylesheet">
+  <link href="../_css/overlay-hamburger.css" type="text/css" rel="stylesheet">
+  
 </head>
 
 <body>
@@ -31,16 +33,16 @@
               </ul>
             </div>
 
-            <div id="myNav" class="overlay">
-              <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-              <div class="overlay-content">
-                <a href="#!/about">About</a>
-                <a href="#!/projects">Projects</a>
-                <a href="#!/contact">Contact</a>
-              </div>
+            <div id="toggle" class="button_container"><span class="top"></span><span class="middle"></span><span class="bottom"></span></div>
+            <div id="overlay" class="overlay">
+              <nav class="overlay-menu">
+                <ul>
+                  <li><a href="#!/about">About</a></li>
+                  <li><a href="#!/projects">Projects</a></li>
+                  <li><a href="#!/contact">Contact</a></li>
+                </ul>
+              </nav>
             </div>
-
-            <span style="font-size:40px;cursor:pointer;color:white" onclick="openNav()" id="navbtn">&#9776;</span>
           </nav>
         </div>
 
@@ -54,24 +56,24 @@
           </div-->
           <div class="about_hero_head">
             <div id="typed-strings">
-              <div typed type-speed="30">The name's Yum,</div> 
-              <div typed id="about_name" type-speed="30" start-timeout="2400">Kevin Yum^500</div>
-              <div typed start-timeout="4000">I'm a UX/UI designer and</div>
-              <div typed start-timeout="5070">Front End Developer</div>
+              <div typed type-speed="3">The name's Yum,</div>
+              <div typed id="about_name" type-speed="3" start-timeout="900">Kevin Yum^500</div>
+              <div type-speed="3" typed start-timeout="1600">UX/UI designer &amp;</div>
+              <div type-speed="3" typed start-timeout="1600">Front End Developer</div>
             </div>
           </div>
         </div>
-        
+
         <div class="row">
           <div class="scroll-for-more">
-            <h3>Scroll<br><span class="animated_super_slow infinite flash">&#11167;</span></h3>
+            <a href="#" scroll-to="about_intro"><h3>Scroll<br><span class="animated_super_slow infinite flash">&#11167;</span></h3></a>
           </div>
         </div>
       </div>
 
       <div class="about_info">
 
-        <div class="about_intro">
+        <div class="about_intro" id="about_intro">
           <div class="row full-width">
             <div class="medium-6 medium-offset-3 columns">
 
@@ -80,7 +82,7 @@
               <div class="about_me">
 
                 <h1>ABOUT ME</h1>
-                <p>I like to make ideas into reality! The crazier, the harder work. The more creative, the more excited it get. The more complex, the more tears I shed. Though tears may fall, I actually prefer challenging problems. I am still a padawan when it comes to web design/development, so I welcome any opportunites that may help me grow into a jedi master of web development. Won’t you be my yoda?<br><br>When I’m not coding or making star wars references, I like to shoot some hoops, play some tunes, or pig out on some tacos!
+                <p>I like to make ideas into reality! I'll take your vision and display them on the web. Whether the project is small or big, you'll find that I'm a hard worker who desires to put out my best effort each and everytime. Where others may see problems, I see challenges that will be <strong>solved</strong>. I welcome them because it'll make the end product that much better for you and your clients.</p>
               </div>
 
 
@@ -99,7 +101,7 @@
                   <span class="icons" id="ideas_icon"></span>
                   <div class="HIT_info">
                     <h3>IDEAS</h3>
-                    <p>I collaborate with my clients to help our ideas grow into an ideal and well-planned design. My goal is to make sure clients are satisfied and proud of their design.</p>
+                    <p>I collaborate with my clients to help our ideas grow into an ideal and well-planned designs. My goal is to make sure clients are satisfied and proud of their design.</p>
                   </div>
                 </div>
               </div>
@@ -109,7 +111,7 @@
                   <span class="icons" id="development_icon"></span>
                   <div class="HIT_info">
                     <h3>DEVELOPMENT</h3>
-                    <p>I plan out the structure of the website, focusing on responsive web design, intuitive UI, and creative interactions fit for the client's needs. I strive to create memorable interactions for the users to help your site grow.</p>
+                    <p>I plan out the structure of the website, focusing on responsive web design, intuitive UI, and creative interactions fit for the client's needs. I keep in mind that users often leave web pages that are unintuitive. To make them stay longer I develop the site to flow and have a clear design. I strive to create memorable interactions for the users to help your site grow.</p>
                   </div>
                 </div>
               </div>
@@ -119,7 +121,7 @@
                   <span class="icons" id="code_icon"></span>
                   <div class="HIT_info">
                     <h3>CODE</h3>
-                    <p>I design with multiple browsers -- Chrome, Firefox, Safari, Edge -- in mind on multiple platforms -- PC, Mac, tablets, phones. I like to code from scratch using HTML, CSS, and JavaScript using front-end frameworks like Foundation and Bootstrap, but I can also create sites using Wordpress. I also have expertise in programming for back-end using PHP and MySQL.</p>
+                    <p>I design with multiple browsers -- Chrome, Firefox, Safari, Edge -- in mind on multiple platforms -- PC, Mac, tablets, phones. Generally, I code from scratch using HTML, CSS, and JavaScript using front-end frameworks like Foundation and Bootstrap, but I also use Wordpress. I also have expertise in programming for back-end using PHP and MySQL.</p>
                   </div>
                 </div>
               </div>
@@ -154,14 +156,15 @@
   </div>
 
 
-  <script src='../_js/jquery-3.2.1.js'></script>
-  <script src="../_js/foundation.min.js"></script>
-  <script src="../_js/overlay.js"></script>
-  <script src="../_js/typewriter.js"></script>
-  <script src="../_js/jquery.waypoints.min.js"></script>
-  <script src="../_js/waypoint_app.js"></script>
-  <script src="../_js/typed.min.js"></script>
-  <script src="../_js/typed_app.js"></script>
+  <script src='_js/jquery-3.2.1.js'></script>
+  <script src="_js/foundation.min.js"></script>
+  <script src="_js/overlay.js"></script>
+  <script src="_js/typewriter.js"></script>
+  <script src="_js/jquery.waypoints.min.js"></script>
+  <script src="_js/waypoint_app.js"></script>
+  <script src="_js/typed.min.js"></script>
+  <script src="_js/typed_app.js"></script>
+
 </body>
 
 </html>

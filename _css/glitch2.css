@@ -12,7 +12,7 @@
   top: 0;
   width: 100%;
   clip: rect(0, 0, 0, 0);
-  color: black;
+  color: red;
 }
 
 /* line 16, C:/Users/kevin/Desktop/repos/Portfolio_Website_2/_sass/glitch2.scss */
@@ -24,7 +24,7 @@
 /* line 21, C:/Users/kevin/Desktop/repos/Portfolio_Website_2/_sass/glitch2.scss */
 .glitch:after {
   left: 1px;
-  text-shadow: -1px 0 rgba(0, 0, 255, 0.7);
+  text-shadow: -1px 0 rgba(0, 0, 0, 0.7);
 }
 
 /* line 27, C:/Users/kevin/Desktop/repos/Portfolio_Website_2/_sass/glitch2.scss */
@@ -35,7 +35,7 @@
 
 /* line 31, C:/Users/kevin/Desktop/repos/Portfolio_Website_2/_sass/glitch2.scss */
 .glitch:hover:after {
-  text-shadow: -5px 0 rgba(0, 0, 255, 0.7);
+  text-shadow: -5px 0 rgba(0, 0, 0, 0.7);
   animation: glitch-loop-2 0.8s infinite ease-in-out alternate-reverse;
 }
 

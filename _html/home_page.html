@@ -1,16 +1,6 @@
-<!doctype html>
-<html>
-
-<head>
-  
-</head>
-
-
-<body>
-
-  <div id="particles-js" class="container">
+<div id="particles-js" class="container">
   <div class="home">
-    
+
 
 
 
@@ -28,16 +18,16 @@
           </ul>
         </div>
 
-        <div id="myNav" class="overlay">
-          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-          <div class="overlay-content">
-            <a href="#!/about">About</a>
-            <a href="#!/projects">Projects</a>
-            <a href="#!/contact">Contact</a>
-          </div>
+        <div id="toggle" class="button_container"><span class="top"></span><span class="middle"></span><span class="bottom"></span></div>
+        <div id="overlay" class="overlay">
+          <nav class="overlay-menu">
+            <ul>
+              <li><a href="#!/about">About</a></li>
+              <li><a href="#!/projects">Projects</a></li>
+              <li><a href="#!/contact">Contact</a></li>
+            </ul>
+          </nav>
         </div>
-
-        <span style="font-size:40px;cursor:pointer;color:white" onclick="openNav()" id="navbtn">&#9776;</span>
       </nav>
     </div>
 
@@ -45,16 +35,18 @@
 
       <div class="medium-6 columns">
         <div class="intro">
-          <h1 class="animated_fast fadeInUp">DISPLAY</h1>
-          <h1 class="animated_fast2 fadeInUp">YOUR</h1>
-          <h1 class="animated_fast3 fadeInUp">VISION</h1>
-          <p class="animated_fast4 flipInX"> Web Developer &middot; Kevin Yum</p>
           
+          <h1 class="animated_fast fadeInUp glitch" data-text="DISPLAY"><a href="#!/about">DISPLAY</a></h1>
+          <h1 class="animated_fast2 fadeInUp glitch" data-text="YOUR"><a href="#!/about">YOUR</a></h1>
+          <h1 class="animated_fast3 fadeInUp glitch" data-text="VISION"><a href="#!/about">VISION</a></h1>
+          <p class="animated_fast4 flipInX"> Web Developer &middot; Kevin Yum</p>
+          <a href="#!/about" class="animated_fast5 flipInX" id="learn-more-btn">Learn More</a>
+
         </div>
       </div>
       <div class="medium-6 columns">
         <div id="face_img" class="animated_slow fadeIn">
-          <img src="../_images/face_lc.png">
+          <img src="_images/face_lc.png">
         </div>
       </div>
     </div>
@@ -75,17 +67,9 @@
 
         </div-->
 
-      </div>
-    </div>
+  </div>
+</div>
 
-
-  <script src='../_js/jquery-3.2.1.js'></script>
-  <script src="../_js/particles.min.js"></script>
-  <script src="../_js/app_particles.js"></script>
-
-
-
-
-</body>
-
-</html>
+<script src="_js/particles.min.js"></script>
+<script src="_js/app_particles.js"></script>
+<script src="_js/overlay.js"></script>

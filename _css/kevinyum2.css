@@ -87,16 +87,32 @@ body {
 }
 
 #back-to-top a {
+  content: url(../_images/icons/back_to_top1.png);
+  width: 26px;
   position: fixed;
   right: 20px;
   bottom: 20px;
   font-size: 30px;
-  color: yellow;
+  color: white;
   transition-duration: 1s;
 }
 
 #back-to-top a:hover {
+  content: url(../_images/icons/back_to_top2.png);
   color: firebrick;
+  transition-duration: 1s;
+}
+
+#back-to-projects,#back-to-projects a {
+  text-align: center;
+  color: red;
+  font-family: raleway, sans-serif;
+  font-weight: bold;
+  transition-duration: 1s;
+}
+
+#back-to-projects a:hover {
+  color: yellow;
   transition-duration: 1s;
 }
 /* =============================
@@ -128,13 +144,35 @@ body {
 }
 
 .intro h1 {
-  font: 9.6em/130px bebas, sans-serif;
+  font: 9.4em/110px bebas, sans-serif;
+  width: 65%;
+}
+
+.intro a {
   color: firebrick;
 }
 
 .intro p {
   font: 1.5em raleway, sans-serif;
   color: white;
+}
+
+#learn-more-btn {
+  padding: 2px 10px;
+  border: 2px white solid;
+  font-family: bebas, sans-serif;
+  font-size: 22px;
+  position: relative;
+  transition: 0.8s;
+  text-align: center;
+  color: white;
+  letter-spacing: 1px;
+}
+
+#learn-more-btn:hover {
+  border-color: firebrick;
+  color: firebrick;
+  transition: 0.5s;
 }
 
 .nav-list {
@@ -197,6 +235,7 @@ body {
   margin: 20px;
   float: left;
   z-index: 9999;
+  position: relative;
 }
 
 #fixed_navbar {
@@ -213,7 +252,7 @@ body {
   margin: 20px;
 }
 
-.overlay {
+/*.overlay {
   height: 0%;
   width: 100%;
   position: fixed;
@@ -264,7 +303,7 @@ body {
     top: 15px;
     right: 35px;
   }
-}
+}*/
 
 @media screen and (max-width: 650px) {
   #navbtn {
@@ -300,7 +339,7 @@ body {
 }
 
 .contact_info p {
-  margin-top: 40px;
+  margin-top: 10px;
   color: white;
 }
 
@@ -357,6 +396,75 @@ form textarea::-moz-input-placeholder {
   border: none;
 }
 
+.content{
+  padding: 20px;
+}
+
+.content button,
+.content input[type="submit"]{
+  background: #fff;
+  padding: 10px;
+  border-radius: 10px;
+  cursor: pointer;
+  color: #777;
+  border: 0;
+  box-shadow: 2px 2px 2px rgba(20,20,20,0.1);
+  font-size: 16px;
+}
+
+.content input{
+  width: 100%;
+  padding: 10px 5%;
+  border-radius: 10px;
+  border: 2px solid #ddd;
+
+}
+
+.content input[type="submit"]:last-child{
+  width: 150px;
+  display: block;
+  background-color: firebrick;
+  color: #262626;
+  font-family: raleway, sans-serif;
+  font-weight: 700;
+}
+
+.content textarea{
+  width: 100%;
+  padding: 10px 5%;
+  border-radius: 10px;
+  border: 2px solid #ddd;
+  overflow-x: hidden;
+  height: 140px;
+  max-height: 140px;
+}
+
+input.ng-invalid.ng-touched, textarea.ng-invalid.ng-touched {
+  border: 2px solid red;
+}
+
+input[disabled="disabled"]{
+  opacity: 0.4;
+  cursor: not-allowed !important;
+}
+
+.contact-content {
+  height: 340px;
+}
+
+.contact-success {
+  color: white;
+  height: 340px;
+}
+
+.contact-success h2 {
+  font-family: bebas, sans-serif;
+  font-size: 70px;
+  margin: 20px 20px -10 0;
+}
+
+
+
 
 /* ===============================
    ========== ABOUT ME ===========
@@ -405,6 +513,7 @@ form textarea::-moz-input-placeholder {
 
 .about_intro {
   width: 100%;
+  padding: 50px;
 }
 
 .about_me {
@@ -470,14 +579,14 @@ form textarea::-moz-input-placeholder {
   text-align: center;
   font-family: "brandonBLD", sans-serif;
   font-size: 17px;
-  color: black;
+  color: white;
 }
 
 .about_me p,
 .hire p {
   font-family: raleway, sans-serif;
   font-size: 16px;
-  font-weight: bold;
+  font-weight:;
   color: grey;
 }
 
@@ -746,7 +855,7 @@ form textarea::-moz-input-placeholder {
 .GW_intro,
 .ascend_intro {
   width: 62.64%;
-  margin: auto;
+  margin: 0 auto 80px auto;
 }
 
 .GW_intro h1,
@@ -806,7 +915,7 @@ form textarea::-moz-input-placeholder {
 
 #summary_GW,
 #summary_ascend {
-  margin: 60px 0 100px 5px;
+  margin: 60px 0 50px 5px;
 
 }
 
@@ -846,7 +955,7 @@ form textarea::-moz-input-placeholder {
   margin: auto;
 }*/
 
-.footer {
+footer {
   position: relative;
   width: 70%;
   display: block;
@@ -854,7 +963,7 @@ form textarea::-moz-input-placeholder {
   text-align: center;
 }
 
-.footer h2 {
+footer h2 {
   display: inline-block;
   margin: 0 30px 0 30px;
   font-family: museo, sans-serif;
@@ -863,6 +972,7 @@ form textarea::-moz-input-placeholder {
   padding: 10px;
   text-transform: uppercase;
   letter-spacing: 60px;
+  line-height: 80px;
 }
 
 canvas {

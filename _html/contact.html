@@ -9,6 +9,7 @@
   <link rel="icon" href="_images/ky-logo.png">
   <link href="../_css/foundation.css" rel="stylesheet">
   <link href="../_css/kevinyum2.css" type="text/css" rel="stylesheet">
+  <link href="../_css/overlay-hamburger.css" type="text/css" rel="stylesheet">
 </head>
 
 <body>
@@ -27,16 +28,25 @@
           </ul>
         </div>
 
-        <div id="myNav" class="overlay">
+        <!--div id="myNav" class="overlay">
           <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
           <div class="overlay-content">
             <a href="#!/about">About</a>
             <a href="#!/projects">Projects</a>
             <a href="#!/contact">Contact</a>
           </div>
-        </div>
+        </div-->
 
-        <span style="font-size:40px;cursor:pointer;color:white" onclick="openNav()" id="navbtn">&#9776;</span>
+        <div id="toggle" class="button_container"><span class="top"></span><span class="middle"></span><span class="bottom"></span></div>
+        <div id="overlay" class="overlay">
+          <nav class="overlay-menu">
+            <ul>
+              <li><a href="#!/about">About</a></li>
+              <li><a href="#!/projects">Projects</a></li>
+              <li><a href="#!/contact">Contact</a></li>
+            </ul>
+          </nav>
+        </div>
       </nav>
     </div>
 
@@ -53,33 +63,42 @@
 
 
     <div class="contact_form animated_slow fadeIn">
-      <form class="form">
 
-        <div class="row">
-          <div class="small-6 small-offset-3 column">
-            <input type="text" id="name" name="name" placeholder="Name">
+      <div class="content contact-content">
+        <form name="contactForm" ng-submit="sendMessage()" novalidate>
+
+          <div class="row">
+            <div class="small-6 small-offset-3 column">
+              <div ng-show="contactForm.name.$touched && contactForm.name.$invalid">
+                <small style="color: red; display: block; text-align: center;">Enter a valid name</small>
+              </div>
+              <input type="text" placeholder="name" name="name" ng-model="contact.name" ng-required="true" />
+            </div>
           </div>
-        </div>
 
-        <div class="row">
-          <div class="small-6 small-offset-3 column">
-            <input type="text" id="email" name="email" placeholder="Email">
+          <div class="row">
+            <div class="small-6 small-offset-3 column">
+              <div ng-show="contactForm.email.$touched && contactForm.email.$invalid">
+                <small style="color: red; display: block; text-align: center;">Enter a valid email</small>
+              </div>
+              <input type="email" placeholder="Email" name="email" ng-model="contact.email" ng-required="true" />
+            </div>
           </div>
-        </div>
 
-        <div class="row">
-          <div class="small-6 small-offset-3 column">
-            <textarea name="message" id="message" placeholder="Your message"></textarea>
+          <div class="row">
+            <div class="small-6 small-offset-3 column">
+              <textarea placeholder="Your Message" name="message" ng-model="contact.message" ng-required="true"></textarea>
+            </div>
           </div>
-        </div>
 
-        <div class="row">
-          <div class="small-6 small-offset-3 column">
-            <input type="submit" id="submit" value="SEND">
+          <div class="row">
+            <div class="small-6 small-offset-3 column">
+              <input type="submit" value="Send" ng-disabled="contactForm.$invalid" />
+            </div>
           </div>
-        </div>
+        </form>
+      </div>
 
-      </form>
     </div>
 
 
@@ -87,8 +106,8 @@
       <div class="row">
         <div class="small-6 small-offset-3 column">
           <p>(818) 861-9664<br>kevinyumdesign@gmail.com</p>
-          <img src="../_images/fb_icon.png">
-          <img src="../_images/github_icon.png">
+          <img src="_images/fb_icon.png">
+          <img src="_images/github_icon.png">
         </div>
       </div>
     </div>
