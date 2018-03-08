@@ -167,6 +167,7 @@ body {
   text-align: center;
   color: white;
   letter-spacing: 1px;
+  z-index: 1;
 }
 
 #learn-more-btn:hover {
@@ -575,6 +576,10 @@ input[disabled="disabled"]{
   right: 50%;
 }
 
+.scroll-for-more img {
+  width: 20px;
+}
+
 .scroll-for-more h3 {
   text-align: center;
   font-family: "brandonBLD", sans-serif;
@@ -838,7 +843,7 @@ input[disabled="disabled"]{
 
 .showcase_GW:after {
   content: "";
-  background-image: url(../_images/project_GW_bg.jpg);
+  background-image: url(../_images/project_gw_bg.jpg);
   background-size: cover;
   background-attachment: fixed;
   opacity: 0.4;
@@ -1009,3 +1014,4 @@ canvas {
 .main.ng-leave.ng-leave-active {
   opacity:0;
 }*/
+
