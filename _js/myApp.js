@@ -38,6 +38,9 @@ myApp.config(function ($routeProvider) {
       templateUrl: '_html/contact_success.html',
       controller: 'contactController'
     });
+  
+  
+  
 
 });
 
@@ -91,3 +94,9 @@ myApp.controller('contactController', ['$scope', '$location', '$http', function 
 
   }
 }]);
+
+$rootScope.$on("$routeChangeSuccess", function (event, currentRoute, previousRoute) {
+
+    window.scrollTo(0, 0);
+
+});
