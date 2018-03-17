@@ -1,0 +1,27 @@
+{
+  "name": "portfolio_website",
+  "version": "1.0.0",
+  "description": "package.json for portfolio_website",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/k-yum/Portfolio_Website_2.git"
+  },
+  "keywords": [
+    "portfolio",
+    "website",
+    "package.json"
+  ],
+  "author": "Kevin",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/k-yum/Portfolio_Website_2/issues"
+  },
+  "homepage": "https://github.com/k-yum/Portfolio_Website_2#readme",
+  "dependencies": {
+    "nodemailer": "^4.6.3"
+  }
+}

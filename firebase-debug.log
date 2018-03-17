@@ -1,0 +1,32 @@
+[debug] [2018-03-17T04:24:33.989Z] ----------------------------------------------------------------------
+[debug] [2018-03-17T04:24:33.993Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\kevin\AppData\Roaming\npm\node_modules\firebase-tools\bin\firebase serve
+[debug] [2018-03-17T04:24:33.994Z] CLI Version:   3.17.6
+[debug] [2018-03-17T04:24:33.994Z] Platform:      win32
+[debug] [2018-03-17T04:24:33.994Z] Node Version:  v9.2.0
+[debug] [2018-03-17T04:24:33.995Z] Time:          Fri Mar 16 2018 21:24:33 GMT-0700 (Pacific Daylight Time)
+[debug] [2018-03-17T04:24:33.995Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2018-03-17T04:24:34.021Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2018-03-17T04:24:34.023Z] > authorizing via signed-in user
+[debug] [2018-03-17T04:24:34.028Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects/contact-form-angul  
+  
+ Fri Mar 16 2018 21:24:34 GMT-0700 (Pacific Daylight Time)
+[debug] [2018-03-17T04:24:34.591Z] <<< HTTP RESPONSE 200
+[debug] [2018-03-17T04:24:34.593Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/database/contact-form-angul/tokens  
+  
+ Fri Mar 16 2018 21:24:34 GMT-0700 (Pacific Daylight Time)
+[debug] [2018-03-17T04:24:35.082Z] <<< HTTP RESPONSE 200
+[debug] [2018-03-17T04:24:35.086Z] >>> HTTP REQUEST GET https://cloudresourcemanager.googleapis.com/v1/projects/contact-form-angul  
+  
+ Fri Mar 16 2018 21:24:35 GMT-0700 (Pacific Daylight Time)
+[debug] [2018-03-17T04:24:35.576Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Serving from 'C:\Users\kevin\Desktop\repos\Portfolio_Website_2'...
+[info] 
+[debug] [2018-03-17T04:24:35.581Z] >>> HTTP REQUEST GET https://mobilesdk-pa.googleapis.com/v1/projects/20054339945/clients/_:getWebAppConfig  
+  
+ Fri Mar 16 2018 21:24:35 GMT-0700 (Pacific Daylight Time)
+[debug] [2018-03-17T04:24:36.190Z] <<< HTTP RESPONSE 200
+[info] i  hosting: Serving hosting files from: public
+[info] +  hosting: Local server: http://localhost:5000
+

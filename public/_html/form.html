@@ -1,0 +1,60 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>ng Contact</title>
+<meta charset="utf-8">
+<link href="style.css" rel="stylesheet" />
+</head>
+<body>
+    <div class="contactForm"  ng-app="contact_app"  ng-controller='contact_controller'>
+    	<p>This page can be easily integerated with HTML or PHP using just two files.</p>
+       	<div class="contact-header">
+        	<h2>Contact Form</h2>
+        </div><!-- end div .contact-header-->
+        <!--BEGIN MAIN-CONTAINER -->
+    	<div  class="main-container">
+            <div id="loader" ng-show="loader">Processing, please wait.</div>
+            <div id="response" class="green-bg" ng-show="toggle">Your email has been sent successfully.</div>
+            <div id="err" class="red-bg" ng-show="errtoggle">Oops! Something's not right. Please check your details</div>
+            <form class="contact" name="contact" autocomplete="off">
+                <fieldset>
+                    <div class="input-field left-align">
+                        <label>Your Name</label>
+                        <input type="text" name="name" ng-model="name"  required />
+                    </div><!-- end div .input-field-->
+                    <div class="input-field right-align">
+                        <label>Email</label>
+                        <input type="email" name="email" ng-model="email"  required />
+                    </div><!-- end div .input-field-->
+                </fieldset>
+                <fieldset>
+                    <div class="input-field left-align">
+                    <label>Phone</label> 
+                    <input type="number" name="phone" ng-model="phone"  ng-minlength="5" ng-maxlength="15" required />
+                    </div><!-- end div .input-field-->
+                    <div class="input-field right-align">
+                    <label>Subject</label>
+                    <select name="subject" ng-model="subject.type"  required ng-options='option.value as option.name for option in typeOptions'>
+                    </select>
+                    </div><!-- end div .input-field-->
+                 </fieldset>
+                 <fieldset>
+                    <label>Message</label>
+                    <textarea name="message" ng-model="message" rows="4" cols="50"></textarea>
+                    <div class="captcha">
+                    	<label>Captcha</label>
+                    	<span ng-init="cone=getRandomSpan()">{{ cone }}</span><span ng-init="ctwo=getRandomSpan()"> + {{ ctwo }}</span>
+                     	<input id="captcha" type="number" ng-model="type_captcha" ng-blur="result()" required />
+                     </div><!-- end div .captcha-->
+                    <button ng-disabled="contact.$invalid" ng-click="check_credentials()" >Submit</button>
+                 </fieldset>
+             </form>
+         </div>
+         <!--END MAIN-CONTAINER-->
+    </div><!-- end div .contactForm-->
+<script src="angular.min.js"></script>
+<script src="ng-contact.js"></script>
+
+</body>
+</html>

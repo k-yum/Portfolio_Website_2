@@ -1,0 +1,121 @@
+@charset "utf-8";
+/* CSS Document */
+
+/* === HTML Section === */
+
+.contactForm {
+  width: 750px;
+  margin: 50px auto;
+  padding: 35px;
+  border: 1px solid #cbcbcb;
+  background-color: #FFF;
+}
+
+.contact-header {
+  width: auto;
+  height: 50px;
+  background-color: #F5F5F5;
+  border: 1px solid #cbcbcb;
+  border-bottom: none;
+  padding-left: 22px;
+}
+
+.contact-header h2 {
+  font-weight: 500;
+}
+
+.main-container {
+  padding: 10px;
+  border: 1px solid #cbcbcb;
+  position: relative;
+}
+
+#loader {
+  position: absolute;
+  background-color: black;
+  opacity: 0.7;
+  height: 100%;
+  width: 100%;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 300px;
+  color: #CECECE;
+}
+
+#err,
+#response {
+  width: 93.5%;
+  height: auto;
+  padding: 10px;
+  border-radius: 4px;
+  margin-left: 11px;
+  color: #FFFFFF;
+}
+
+.green-bg {
+  background: #23BD48;
+}
+
+.red-bg {
+  background: #E84949;
+}
+
+/* === Form Section === */
+
+form.contact input {
+  width: 50%;
+  padding: 5px 4px;
+}
+
+form.contact input.ng-valid {
+  border: 4px solid #23BD48;
+}
+
+form.contact input.ng-invalid-email {
+  border: 4px solid #E84949;
+}
+
+form.contact label {
+  width: 100%;
+}
+
+form.contact textarea {
+  width: 98.4%;
+  padding: 5px 4px;
+}
+
+form.contact select {
+  width: 99.5%;
+  padding: 5px 2px;
+  color: #58666e;
+}
+
+form.contact button {
+  margin-top: 10px;
+  background: #23BD48;
+  padding: 10px;
+  border: none;
+  color: #ffffff;
+  cursor: pointer;
+  float: right;
+}
+
+form.contact button[disabled] {
+  opacity: 0.65;
+  cursor: not-allowed;
+}
+
+form.contact .captcha {
+  width: 100%;
+}
+
+form.contact .captcha input[type="number"] {
+  width: 20%;
+}
+
+form.contact .invalid-captcha {
+  border: 1px solid #E84949;
+}

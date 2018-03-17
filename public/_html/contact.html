@@ -1,0 +1,108 @@
+<div class="contact-us">
+
+  <div class="row">
+    <nav class="row full-width" id="top-nav">
+      <a href="#!/">
+        <div class="logo"><img src="_images/ky-logo2.png"></div>
+      </a>
+      <div class="nav_fullpage">
+        <ul class="clearfix">
+          <a href="#!/about">About</a>
+          <a href="#!/projects">Projects</a>
+          <a href="#!/contact">Contact</a>
+        </ul>
+      </div>
+
+      <!--div id="myNav" class="overlay">
+          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+          <div class="overlay-content">
+            <a href="#!/about">About</a>
+            <a href="#!/projects">Projects</a>
+            <a href="#!/contact">Contact</a>
+          </div>
+        </div-->
+
+      <div id="toggle" class="button_container"><span class="top"></span><span class="middle"></span><span class="bottom"></span></div>
+      <div id="overlay" class="overlay">
+        <nav class="overlay-menu">
+          <ul>
+            <li><a href="#!/about">About</a></li>
+            <li><a href="#!/projects">Projects</a></li>
+            <li><a href="#!/contact">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </nav>
+  </div>
+
+
+
+  <div class="contact_intro animated_fast fadeInDown">
+    <div class="row">
+      <div class="small-6 small-offset-3 column">
+        <h1>GET IN TOUCH</h1>
+        <p>Want to get in touch or talk to me?<br>Contact me via form, email, phone/text</p>
+      </div>
+    </div>
+  </div>
+
+
+    <div class="contactForm row">
+      <div class="small-6 small-offset-3 column">
+    <!-- end div .contact-header-->
+    <!--BEGIN MAIN-CONTAINER -->
+    <div class="main-container">
+      <div id="loader" ng-show="loader">Processing, please wait.</div>
+      <div id="response" class="green-bg" ng-show="toggle">Your email has been sent successfully.</div>
+      <div id="err" class="red-bg" ng-show="errtoggle">Oops! Something's not right. Please check your details</div>
+      <form class="contact" name="contact" autocomplete="off">
+        <fieldset>
+          <div class="input-field left-align">
+
+            <input type="text" placeholder="Name" name="name" ng-model="name" required />
+          </div>
+          <!-- end div .input-field-->
+          <div class="input-field right-align">
+
+            <input type="email" placeholder="Email" name="email" ng-model="email" required />
+          </div>
+          <!-- end div .input-field-->
+        </fieldset>
+
+        <fieldset>
+
+          <textarea name="message" placeholder="Your Message" ng-model="message" rows="4" cols="50" required></textarea>
+          <div class="captcha">
+            <label>Captcha Test :</label>
+            <span>What is&nbsp;</span><span ng-init="cone=getRandomSpan()">{{ cone }}</span><span ng-init="ctwo=getRandomSpan()"> + {{ ctwo }}</span>
+            <input id="captcha" type="number" ng-model="type_captcha" ng-blur="result()" required />
+          </div>
+          <!-- end div .captcha-->
+          <button ng-disabled="contact.$invalid" ng-click="check_credentials()">Submit</button>
+        </fieldset>
+      </form>
+    </div>
+    <!--END MAIN-CONTAINER-->
+  </div>
+  </div>
+
+  <!-- end div .contactForm-->
+
+
+
+
+  <div class="contact_info animated_fast fadeInUp">
+    <div class="row">
+      <div class="small-6 small-offset-3 column">
+        <p>(818) 861-9664<br>kevinyumdesign@gmail.com</p>
+        <img src="_images/fb_icon.png">
+        <img src="_images/github_icon.png">
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<script src='../_js/jquery-3.2.1.js'></script>
+<script src="../_js/foundation.min.js"></script>
+<script src="../_js/overlay.js"></script>

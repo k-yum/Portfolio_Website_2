@@ -1,0 +1,1115 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+html {
+  overflow-x: hidden;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+  z-index: 100;
+}
+
+a:hover {
+  color: black;
+}
+
+/* ==============================
+   =========== FONTS ============
+   ============================== */
+
+@font-face {
+  font-family: "brandon";
+  src: url('../_fonts/brandon_grotesque/Brandon_reg.otf') format('truetype');
+}
+
+@font-face {
+  font-family: "brandonBLD";
+  src: url('../_fonts/brandon_grotesque/Brandon_bld.otf') format('truetype');
+}
+
+@font-face {
+  font-family: "raleway";
+  src: url("../_fonts/raleway/Raleway-Regular.ttf") format('truetype');
+}
+
+@font-face {
+  font-family: "bebas";
+  src: url("../_fonts/BebasNeue.otf") format('truetype');
+}
+
+@font-face {
+  font-family: "museo";
+  src: url("../_fonts/MuseoSans_500.otf") format('truetype');
+}
+
+@font-face {
+  font-family: "dogRough";
+  src: url("../_fonts/DogRough.otf") format('truetype');
+}
+
+@font-face {
+  font-family: "ink";
+  src: url("../_fonts/ink.ttf") format('truetype');
+}
+
+@font-face {
+  font-family: "ssbld";
+  src: url("../_fonts/sansserifbldflf.otf") format('truetype');
+}
+
+
+/* ================================
+   ========== BACKGROUND ==========
+   ================================ */
+
+/*body {
+  width: 100%;
+  height: 100%;
+  background-image: url(../_images/background.png);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+}*/
+
+body {
+  width: 100%;
+  height: 100%;
+  background-color: #0F0E0E;
+}
+
+#back-to-top a {
+  content: url(../_images/icons/back_to_top1.png);
+  width: 26px;
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  font-size: 30px;
+  color: white;
+  transition-duration: 1s;
+  z-index: 1;
+}
+
+#back-to-top a:hover {
+  content: url(../_images/icons/back_to_top2.png);
+  color: firebrick;
+  transition-duration: 1s;
+}
+
+#back-to-projects,#back-to-projects a {
+  text-align: center;
+  color: red;
+  font-family: raleway, sans-serif;
+  font-weight: bold;
+  transition-duration: 1s;
+}
+
+#back-to-projects a:hover {
+  color: yellow;
+  transition-duration: 1s;
+}
+/* =============================
+   ========= HOME PAGE =========
+   ============================= */
+.home-mobile {
+  display: none;
+}
+
+.home {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  height: 100vh;
+}
+
+#face_img {
+  position: relative;
+  top: -110px;
+  margin-bottom: -110px;
+  z-index: -100;
+}
+
+
+/* home intro */
+
+.intro {
+  text-align: left;
+  margin-top: 10%;
+}
+
+.intro h1 {
+  font: 9.4em/110px bebas, sans-serif;
+  width: 65%;
+}
+
+.intro a {
+  color: firebrick;
+}
+
+.intro p {
+  font: 1.5em raleway, sans-serif;
+  color: white;
+}
+
+#learn-more-btn {
+  padding: 2px 10px;
+  border: 2px white solid;
+  font-family: bebas, sans-serif;
+  font-size: 22px;
+  position: relative;
+  transition: 0.8s;
+  text-align: center;
+  color: white;
+  letter-spacing: 1px;
+  z-index: 1;
+}
+
+#learn-more-btn:hover {
+  border-color: firebrick;
+  color: firebrick;
+  transition: 0.5s;
+}
+
+.nav-list {
+  width: 25%;
+  height: auto;
+  position: absolute;
+  right: 5%;
+  top: 35%;
+}
+
+.nav_fullpage {
+  text-align: right;
+  list-style-type: none;
+  font: 14px "brandonBLD", sans-serif;
+  font-weight: bold;
+  letter-spacing: 1px;
+  color: white;
+  text-transform: uppercase;
+}
+
+.nav_fullpage ul {
+  margin-top: 4%;
+}
+
+.nav_fullpage a {
+  text-decoration: none;
+  color: white;
+  margin: 30px;
+  transition: all 0.25s ease-in;
+}
+
+.nav_fullpage a:hover {
+  transition: all 0.25s ease-in;
+}
+
+@media (-webkit-min-device-pixel-ratio:0) {
+  .nav_fullpage a {
+    background-color: white;
+    background-image: -webkit-linear-gradient(left, firebrick 50%, transparent 50%);
+    background-position: 100% 0;
+    background-size: 200% 200%;
+    color: transparent;
+    -webkit-transition: .25s;
+    -webkit-background-clip: text;
+  }
+  .nav_fullpage a:hover {
+    background-position: 0 0;
+    color: transparent;
+    transition: .25s 0;
+  }
+}
+
+/* ==========================
+   ========== NAV ===========
+   ========================== */
+
+.logo {
+  width: 50px;
+  margin: 20px;
+  float: left;
+  z-index: 9999;
+  position: relative;
+}
+
+#fixed_navbar {
+  width: 100%;
+  top: 0px;
+  position: absolute;
+  z-index: 999;
+
+}
+
+#navbtn {
+  display: none;
+  float: right;
+  margin: 20px;
+}
+
+/*.overlay {
+  height: 0%;
+  width: 100%;
+  position: fixed;
+  z-index: 100;
+  top: 0;
+  left: 0;
+  background-color: #0F0E0E;
+  overflow-y: hidden;
+  transition: 0.5s;
+}
+
+.overlay-content {
+  position: relative;
+  top: 25%;
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.overlay a {
+
+  text-decoration: none;
+  font-size: 70px;
+  font-family: bebas;
+  color: firebrick;
+  display: block;
+  transition: 0.3s;
+}
+
+.overlay a:hover,
+.overlay a:focus {
+  color: #f1f1f1;
+}
+
+.overlay .closebtn {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 70px;
+}
+
+@media screen and (max-height: 450px) {
+  .overlay a {
+    font-size: 20px
+  }
+  .overlay .closebtn {
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
+  }
+}*/
+
+@media screen and (max-width: 650px) {
+  #navbtn {
+    display: block;
+  }
+  .nav_fullpage {
+    display: none;
+  }
+}
+
+
+
+/* ================================
+   ========== CONTACTS ============
+   ================================ */
+
+/* ===== INTRO AND INFO ===== */
+
+.contact-us h1 {
+  font-family: bebas, sans-serif;
+  font-size: 6.4em;
+  line-height: 70px;
+  color: firebrick;
+}
+
+.contact-us p {
+  font-family: brandon, sans-serif;
+  font-size: 22px;
+  line-height: 25px;
+  color: firebrick;
+  letter-spacing: .5px;
+  word-spacing: .5px;
+}
+
+.contact_info p {
+  margin-top: 10px;
+  color: white;
+}
+
+.contact-us img {
+  width: 40px;
+  margin-right: 10px;
+}
+
+/* ===== FORM =====*/
+
+form input::-webkit-input-placeholder {
+  color: #999999;
+  font-family:raleway;
+}
+
+form textarea::-webkit-input-placeholder {
+  color: #999999;
+  font-family: raleway;
+}
+
+form input::-moz-input-placeholder {
+  color: #999999;
+}
+
+form textarea::-moz-input-placeholder {
+  color: #999999;
+}
+
+#name,
+#email,
+#message {
+  border: 1px solid #262626;
+  padding: 0px 10px 0px 10px;
+  color: white;
+  background-color: #3f3e3e;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 8px;
+  -moz-box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 8px;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 8px;
+}
+
+#message {
+  overflow-x: hidden;
+  height: 140px;
+  max-height: 140px;
+  padding-top: 10px;
+}
+
+#submit {
+  width: 160px;
+  height: 45px;
+  background-color: firebrick;
+  color: #262626;
+  font-family: raleway, sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  border: none;
+}
+
+.alert {
+  text-align: center;
+  padding: 10px;
+  background: #79c879;
+  color: #fff;
+  margin-bottom: 10px;
+  display: none;
+}
+
+.content{
+  padding: 20px;
+}
+
+.content button,
+.content input[type="submit"]{
+  background: #fff;
+  padding: 10px;
+  border-radius: 10px;
+  cursor: pointer;
+  color: #777;
+  border: 0;
+  box-shadow: 2px 2px 2px rgba(20,20,20,0.1);
+  font-size: 16px;
+}
+
+.content input{
+  width: 100%;
+  padding: 10px 5%;
+  border-radius: 10px;
+  border: 2px solid #ddd;
+
+}
+
+.content input[type="submit"]:last-child{
+  width: 150px;
+  display: block;
+  background-color: firebrick;
+  color: #262626;
+  font-family: raleway, sans-serif;
+  font-weight: 700;
+}
+
+.content textarea{
+  width: 100%;
+  padding: 10px 5%;
+  border-radius: 10px;
+  border: 2px solid #ddd;
+  overflow-x: hidden;
+  height: 140px;
+  max-height: 140px;
+}
+
+input.ng-invalid.ng-touched, textarea.ng-invalid.ng-touched {
+  border: 2px solid red;
+}
+
+input[disabled="disabled"]{
+  opacity: 0.4;
+  cursor: not-allowed !important;
+}
+
+.contact-content {
+  height: 340px;
+}
+
+.contact-success {
+  color: white;
+  height: 340px;
+}
+
+.contact-success h2 {
+  font-family: bebas, sans-serif;
+  font-size: 70px;
+  margin: 20px 20px -10 0;
+}
+
+/* contact-form w/ captcha */
+
+
+
+
+
+
+
+
+
+#loader {
+  position: absolute;
+  background-color: black;
+  opacity: 0.7;
+  height: 100%;
+  width: 100%;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 300px;
+  color: #CECECE;
+}
+
+#err,
+#response {
+  width: 93.5%;
+  height: auto;
+  padding: 10px;
+  border-radius: 4px;
+  margin-left: 11px;
+  color: #FFFFFF;
+}
+
+.green-bg {
+  background: #23BD48;
+}
+
+.red-bg {
+  background: #E84949;
+}
+
+/* === Form Section === */
+
+form.contact input {
+  width: 100%;
+  padding: 5px 4px;
+  border-radius: 5px;
+}
+
+form.contact input.ng-valid {
+  border: 4px solid #23BD48;
+}
+
+form.contact input.ng-invalid-email {
+  border: 4px solid #E84949;
+}
+
+form.contact label {
+  width: 100%;
+  font-weight: bold;
+  color: yellow;
+  letter-spacing: 1px;
+}
+
+form.contact textarea {
+  width: 100%;
+  height: 130px;
+  padding: 5px 4px;
+  border-radius: 5px;
+}
+
+form.contact select {
+  width: 99.5%;
+  padding: 5px 2px;
+  color: #58666e;
+}
+
+form.contact button {
+  background: firebrick;
+  padding: 13px;
+  border: none;
+  color: #ffffff;
+  cursor: pointer;
+  margin: auto;
+  font-family: raleway, sans-serif;
+  float: right;
+  margin-top: 45px; 
+  border-radius: 5px;
+}
+
+form.contact button[disabled] {
+  opacity: 0.65;
+  cursor: not-allowed;
+}
+
+form.contact .captcha {
+  width: 50%;
+  font-family: bebas, sans-serif;
+  color: white;
+  float: left;
+}
+
+#captcha {
+  width: 50%;
+}
+
+form.contact .captcha input[type="number"] {
+  width: 20%;
+}
+
+form.contact .invalid-captcha {
+  border: 1px solid #E84949;
+}
+
+
+
+
+
+/* ===============================
+   ========== ABOUT ME ===========
+   =============================== */
+
+.about_parent {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+
+}
+
+.about_child {}
+
+.about_bg_hero {
+  width: 100%;
+  height: 100vh;
+  display: block;
+  position: relative;
+  background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+
+}
+
+.about_bg_hero:after {
+  content: "";
+  background-image: url(../_images/about_pic_inksplash3_web.jpg);
+  background-position: center;
+  background-size: cover;
+  opacity: 0.85;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1;
+}
+
+.about_hero_head {
+  width: 100%;
+  margin-top: 80px;
+}
+
+.about_info {
+  background-color: white;
+}
+
+.about_intro {
+  width: 100%;
+  padding: 50px;
+}
+
+.about_me {
+  margin: 60px 0 100px 0px;
+}
+
+.about_me,
+.about_hero_head {
+  letter-spacing: .4px;
+}
+
+.about_me h1 {
+  color: firebrick;
+  font-family: dogRough, sans-serif;
+  font-size: 8.5em;
+  text-align: center;
+
+}
+
+.about_me h2 {
+  font-family: raleway, sans-serif;
+  font-size: 1.6em;
+  line-height: 40px;
+  color: gray;
+}
+
+#about_name {
+  color: firebrick;
+}
+
+#typed,
+#typed-strings {
+  color: black;
+  font-family: bebas, sans-serif;
+  font-weight: lighter;
+  font-size: 5.8em;
+  color: white;
+  text-align: left;
+  letter-spacing: -2px;
+  word-spacing: 4px;
+  line-height: 100px
+}
+
+.typed-cursor {
+  opacity: 0;
+}
+
+.scroll-for-more {
+  position: absolute;
+  bottom: 0px;
+  right: 50%;
+}
+
+.scroll-for-more img {
+  width: 20px;
+}
+
+.scroll-for-more h3 {
+  text-align: center;
+  font-family: "brandonBLD", sans-serif;
+  font-size: 17px;
+  color: white;
+}
+
+.about_me p,
+.hire p {
+  font-family: raleway, sans-serif;
+  font-size: 16px;
+  font-weight:;
+  color: grey;
+}
+
+/* ===== How I Think ===== */
+
+.about_HIT {
+  width: 100%;
+  height: 630px;
+  padding-top: 10px;
+  background-color: #F0F0F0;
+}
+
+.ideas,
+.development,
+.code {
+  margin: 20px;
+  height: 440px;
+  padding-top: 20px;
+  color: #0981cd;
+}
+
+.about_HIT h1 {
+  text-align: center;
+  margin: 70px auto;
+  font-family: museo, sans-serif;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 3.2em;
+  color: #0981cd;
+  width: 30%;
+}
+
+.about_HIT h3 {
+  font-family: ink, sans-serif;
+  font-size: 2.4em;
+  text-align: center;
+  color: black;
+  margin-top: 20px;
+}
+
+.about_HIT p {
+  font-family: brandon, sans-serif;
+  font-size: 18px;
+  margin: 20px;
+  padding: 10px;
+  color: grey;
+}
+
+#ideas_icon, #development_icon, #code_icon  {
+  width: 100px;
+  display: block;
+  margin: auto;
+}
+
+
+/* ===== hire_me_page ===== */
+
+.hire_bg {
+  padding-bottom: 100px;
+}
+
+.hire {
+  width: 80%;
+  margin: auto;
+  position: relative;
+}
+
+.hire h1 {
+  margin-top: 80px;
+  color: black;
+  text-align: center;
+  font-family: ink, sans-serif;
+  text-transform: uppercase;
+  line-height: 80px;
+  font-size: 4em;
+}
+
+.hire h2 {
+  width: 100%;
+  font-family: bebas;
+  font-size: 2.8em;
+  color: firebrick;
+  text-align: center;
+}
+
+.hire ul {
+  width: 94%;
+  text-align: center;
+}
+
+.hire li {
+  display: inline-block;
+}
+
+.hire a {
+  width: 250px;
+  text-align: center;
+  background-color: white;
+  color: firebrick;
+  display: block;
+  font-family: brandonbld, sans-serif;
+  font-size: 20px;
+  padding: 10px;
+  letter-spacing: 1px;
+  background-image: linear-gradient(to bottom, rgba(255, 0, 0, 0) 50%, firebrick 50%);
+  background-size: 100% 200%;
+  transition: background-position .25s;
+  border: 5px solid firebrick;
+}
+
+.hire a:hover {
+  transition: all 0.25s ease-in;
+  background-position: 0% -100%;
+  color: white;
+}
+
+#wink_pic img {
+  background-color: firebrick;
+  background-blend-mode: screen;
+}
+
+/* ===============================
+   ========== PROJECTS ===========
+   =============================== */
+
+.GW-small,
+.ASCEND-small {
+  width: 100%;
+  height: 100vh;
+}
+
+#pspacing{
+  margin: 0;
+  padding: 0;
+}
+
+.GW-small {
+  background-image: url(../_images/project_gw_bg_web.jpg);
+}
+
+.ASCEND-small {
+  background-image: url(../_images/project_ascend_bg_web.jpg);
+}
+
+.GW-small, .ASCEND-small {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.title_GW h1,
+.title_ascend h1 {
+  font-family: museo, sans-serif;
+  font-size: 3.6em;
+  color: #ffff00;
+  text-transform: uppercase;
+  letter-spacing: 20px;
+  word-spacing: 20px;
+  text-align: center;
+  position: relative;
+  top: 200px;
+  height: 200px;
+}
+
+.title_GW a,
+.title_ascend a {
+  font-family: brandon, sans-serif;
+  font-size: 20px;
+  position: relative;
+  top: 40vh;
+  text-align: center;
+  width: 30%;
+  margin: 10px auto 20px auto;
+  padding: 10px;
+  border: 1.5px solid #ffff00;
+  letter-spacing: 2px;
+  color: white;
+  text-decoration: none;
+  overflow: hidden;
+  display: block;
+  background-image: linear-gradient(to bottom, rgba(255, 0, 0, 0) 50%, #ffff00 50%);
+  background-size: 100% 200%;
+  transition: background-position .25s;
+}
+
+.title_GW a:hover,
+.title_ascend a:hover {
+  transition: all 0.25s ease-in;
+  background-position: 0% -100%;
+  color: black;
+}
+
+
+/* ===== Showcase ===== */
+
+.showcase_ascend {
+  width: 100%;
+  height: 100%;
+  display: block;
+  position: relative;
+}
+
+.showcase_ascend:after {
+  content: "";
+  background-image: url(../_images/project_ascend_bg_web.jpg);
+  background-size: cover;
+  opacity: 0.4;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: fixed;
+  z-index: -1;
+  background-blend-mode: luminosity;
+  background-color: grey;
+}
+
+.showcase_GW {
+  width: 100%;
+  height: 100%;
+  display: block;
+  position: relative;
+}
+
+.showcase_GW:after {
+  content: "";
+  background-image: url(../_images/project_gw_bg_web.jpg);
+  background-size: cover;
+  opacity: 0.4;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: fixed;
+  z-index: -1;
+  background-blend-mode: luminosity;
+  background-color: grey;
+}
+
+.GW_intro,
+.ascend_intro {
+  width: 62.64%;
+  margin: 0 auto 80px auto;
+}
+
+.GW_intro h1,
+.ascend_intro h1 {
+  font-family: museo, sans-serif;
+  font-size: 3.4em;
+  letter-spacing: 13px;
+  word-spacing: 10px;
+  text-transform: uppercase;
+  color: #ffff00;
+  text-align: center;
+}
+
+.project_yearService {
+  margin: 30px 0 30px 5px;
+
+}
+
+.GW_intro h3,
+.ascend_intro h3,
+.GW_intro p,
+.ascend_intro p {
+  font-size: 18px;
+  color: white;
+}
+
+.GW_intro h3,
+.ascend_intro h3 {
+  font-family: museo, sans-serif;
+  display: inline-block;
+  font-weight: bold;
+  margin: 30px 100px 0 0;
+}
+
+.launch_site {
+  text-transform: uppercase;
+  font-weight: 100;
+  color: black;
+  margin-right: 0px;
+  background-color: yellow;
+  padding: 0 3px 0 3px;
+}
+
+.launch_site:hover {
+  color: red;
+}
+
+.space {
+  visibility: hidden;
+}
+
+.GW_intro p,
+.ascend_intro p {
+  font-family: brandon, sans-serif;
+  font-weight: lighter;
+}
+
+#summary_GW,
+#summary_ascend {
+  margin: 60px 0 50px 5px;
+
+}
+
+.project_web_pic img {
+  width: 100%;
+  display: block;
+  margin: auto;
+}
+
+.showcase_pics {
+  width: 80%;
+  height: 100%;
+  margin: 100px auto 0px auto;
+}
+
+/*.showcase_pic {
+  content: url(../_images/gw_showcase/gw_sc_2.png);
+  width: 80%;
+  margin: auto;
+}
+
+.showcase_pic2 {
+  content: url(../_images/gw_showcase/gw_sc_3.png);
+  width: 80%;
+  margin: auto;
+}
+
+.showcase_pic3 {
+  content: url(../_images/gw_showcase/gw_sc_4.png);
+  width: 80%;
+  margin: auto;
+}
+
+.showcase_pic4 {
+  content: url(../_images/gw_showcase/gw_sc_5.png);
+  width: 80%;
+  margin: auto;
+}*/
+
+footer {
+  position: relative;
+  width: 70%;
+  display: block;
+  margin: 100px auto;
+  text-align: center;
+}
+
+footer h2 {
+  display: inline-block;
+  margin: 0 30px 0 30px;
+  font-family: museo, sans-serif;
+  font-size: 30px;
+  color: #ffff00;
+  padding: 10px;
+  text-transform: uppercase;
+  letter-spacing: 60px;
+  line-height: 80px;
+}
+
+canvas {
+  display: block;
+  vertical-align: bottom;
+}
+
+#particles-js {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+/* =====================================
+   ============ ANIMATIONS =============
+   ===================================== */
+
+/*
+.main.ng-enter {
+  transition: 0.5s linear all;
+  opacity: 0;
+}
+
+.main.ng-enter.ng-enter-active {
+  opacity: 1;
+}*/
+
+/* now the element will fade out before it is removed from the DOM */
+
+/*.main.ng-leave {
+  transition:0.5s linear all;
+  opacity:1;
+}
+.main.ng-leave.ng-leave-active {
+  opacity:0;
+}*/
+
