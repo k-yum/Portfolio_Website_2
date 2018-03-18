@@ -104,7 +104,8 @@ body {
   transition-duration: 1s;
 }
 
-#back-to-projects,#back-to-projects a {
+#back-to-projects,
+#back-to-projects a {
   text-align: center;
   color: red;
   font-family: raleway, sans-serif;
@@ -116,9 +117,11 @@ body {
   color: yellow;
   transition-duration: 1s;
 }
+
 /* =============================
    ========= HOME PAGE =========
    ============================= */
+
 .home-mobile {
   display: none;
 }
@@ -238,7 +241,7 @@ body {
   width: 50px;
   margin: 20px;
   float: left;
-  z-index: 9999;
+  z-index: 999;
   position: relative;
 }
 
@@ -400,23 +403,23 @@ form textarea::-moz-input-placeholder {
   border: none;
 }
 
-.content{
+.content {
   padding: 20px;
 }
 
 .content button,
-.content input[type="submit"]{
+.content input[type="submit"] {
   background: #fff;
   padding: 10px;
   border-radius: 10px;
   cursor: pointer;
   color: #777;
   border: 0;
-  box-shadow: 2px 2px 2px rgba(20,20,20,0.1);
+  box-shadow: 2px 2px 2px rgba(20, 20, 20, 0.1);
   font-size: 16px;
 }
 
-.content input{
+.content input {
   width: 100%;
   padding: 10px 5%;
   border-radius: 10px;
@@ -424,7 +427,7 @@ form textarea::-moz-input-placeholder {
 
 }
 
-.content input[type="submit"]:last-child{
+.content input[type="submit"]:last-child {
   width: 150px;
   display: block;
   background-color: firebrick;
@@ -433,7 +436,7 @@ form textarea::-moz-input-placeholder {
   font-weight: 700;
 }
 
-.content textarea{
+.content textarea {
   width: 100%;
   padding: 10px 5%;
   border-radius: 10px;
@@ -443,11 +446,12 @@ form textarea::-moz-input-placeholder {
   max-height: 140px;
 }
 
-input.ng-invalid.ng-touched, textarea.ng-invalid.ng-touched {
+input.ng-invalid.ng-touched,
+textarea.ng-invalid.ng-touched {
   border: 2px solid red;
 }
 
-input[disabled="disabled"]{
+input[disabled="disabled"] {
   opacity: 0.4;
   cursor: not-allowed !important;
 }
@@ -586,7 +590,7 @@ input[disabled="disabled"]{
 .hire p {
   font-family: raleway, sans-serif;
   font-size: 16px;
-  font-weight:;
+  font-weight: ;
   color: grey;
 }
 
@@ -635,7 +639,9 @@ input[disabled="disabled"]{
   color: grey;
 }
 
-#ideas_icon, #development_icon, #code_icon  {
+#ideas_icon,
+#development_icon,
+#code_icon {
   width: 100px;
   display: block;
   margin: auto;
@@ -718,7 +724,7 @@ input[disabled="disabled"]{
   height: 100vh;
 }
 
-#pspacing{
+#pspacing {
   margin: 0;
   padding: 0;
 }
@@ -731,7 +737,8 @@ input[disabled="disabled"]{
   background-image: url(../_images/project_ascend_bg_web.jpg);
 }
 
-.GW-small, .ASCEND-small {
+.GW-small,
+.ASCEND-small {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -957,7 +964,7 @@ canvas {
 #particles-js {
   position: absolute;
   width: 100%;
-  height: 100%;
+  height: 100%; 
 }
 
 /* =====================================
@@ -983,4 +990,5 @@ canvas {
 .main.ng-leave.ng-leave-active {
   opacity:0;
 }*/
+
 
