@@ -1,16 +1,33 @@
+<!doctype html>
+<html>
 
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Kevin Yum - Contact</title>
+  <link rel="icon" href="../_images/ky-logo2.png">
+  <link href="../_css/foundation.min.css" rel="stylesheet">
+  <link href="../_css/style.css" type="text/css" rel="stylesheet">
+  <link href="../_css/preloader.css" type="text/css" rel="stylesheet">
+  <link href="../_css/animate.css" type="text/css" rel="stylesheet">
+  <link href="../_css/overlay-hamburger.css" type="text/css" rel="stylesheet">
+  <link href="../_css/media-queries.css" type="text/css" rel="stylesheet">
+</head>
+
+<body>
   <div class="contact">
 
     <div class="row">
       <nav class="row full-width" id="top-nav">
-        <a href="#!/">
-          <div class="logo"><img src="_images/ky-logo2.png"></div>
+        <a href="../index.html">
+          <div class="logo"><img src="../_images/ky-logo2.png"></div>
         </a>
         <div class="nav_fullpage">
           <ul class="clearfix">
-            <a href="#!/about">About</a>
-            <a href="#!/projects">Projects</a>
-            <a href="#!/contact">Contact</a>
+            <a href="about.html">About</a>
+            <a href="projects.html">Projects</a>
+            <a href="contact.html">Contact</a>
           </ul>
         </div>
 
@@ -27,9 +44,9 @@
         <div id="overlay" class="overlay">
           <nav class="overlay-menu">
             <ul>
-              <li><a href="#!/about">About</a></li>
-              <li><a href="#!/projects">Projects</a></li>
-              <li><a href="#!/contact">Contact</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="projects.html">Projects</a></li>
+              <li><a href="contact.html">Contact</a></li>
             </ul>
           </nav>
         </div>
@@ -51,35 +68,41 @@
     <div class="contact_form animated_slow fadeIn">
 
       <div class="content contact-content">
-        <form name="contactForm" ng-submit="sendMessage()" novalidate>
+        <form id="contactForm">
 
           <div class="row">
             <div class="small-6 small-offset-3 column">
-              <div ng-show="contactForm.name.$touched && contactForm.name.$invalid">
+              <div class="alert">Message sent! Thanks a bunch!</div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="small-6 small-offset-3 column">
+              <!--div ng-show="contactForm.name.$touched && contactForm.name.$invalid">
                 <small style="color: red; display: block; text-align: center;">Enter a valid name</small>
-              </div>
-              <input type="text" placeholder="name" name="name" ng-model="contact.name" ng-required="true" />
+              </div-->
+              <input type="text" placeholder="name" id="name" required/>
             </div>
           </div>
 
           <div class="row">
             <div class="small-6 small-offset-3 column">
-              <div ng-show="contactForm.email.$touched && contactForm.email.$invalid">
+              <!--div ng-show="contactForm.email.$touched && contactForm.email.$invalid">
                 <small style="color: red; display: block; text-align: center;">Enter a valid email</small>
-              </div>
-              <input type="email" placeholder="Email" name="email" ng-model="contact.email" ng-required="true" />
+              </div-->
+              <input type="email" placeholder="Email" id="email" required/>
             </div>
           </div>
 
           <div class="row">
             <div class="small-6 small-offset-3 column">
-              <textarea placeholder="Your Message" name="message" ng-model="contact.message" ng-required="true"></textarea>
+              <textarea placeholder="Your Message" id="message" required></textarea>
             </div>
           </div>
 
           <div class="row">
             <div class="small-6 small-offset-3 column">
-              <input type="submit" value="Send" ng-disabled="contactForm.$invalid" />
+              <input type="submit" value="Send" />
             </div>
           </div>
         </form>
@@ -92,8 +115,8 @@
       <div class="row">
         <div class="small-6 small-offset-3 column">
           <p>(818) 861-9664<br>kevinyumdesign@gmail.com</p>
-          <img src="_images/fb_icon.png">
-          <img src="_images/github_icon.png">
+          <img src="../_images/fb_icon.png">
+          <img src="../_images/github_icon.png">
         </div>
       </div>
     </div>
@@ -103,4 +126,9 @@
   <script src='../_js/jquery-3.2.1.js'></script>
   <script src="../_js/foundation.min.js"></script>
   <script src="../_js/overlay.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/4.11.0/firebase.js"></script>
+  <script src="../_js/firebase_contact.js"></script>
 
+</body>
+  
+</html>

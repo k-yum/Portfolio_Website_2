@@ -1,17 +1,36 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Kevin Yum - About</title>
+  <link rel="icon" href="../_images/ky-logo2.png">
+  <link href="../_css/foundation.min.css" rel="stylesheet">
+  <link href="../_css/style.css" type="text/css" rel="stylesheet">
+  <link href="../_css/preloader.css" type="text/css" rel="stylesheet">
+  <link href="../_css/animate.css" type="text/css" rel="stylesheet">
+  <link href="../_css/overlay-hamburger.css" type="text/css" rel="stylesheet">
+  <link href="../_css/media-queries.css" type="text/css" rel="stylesheet">
+</head>
+
+<body>
+
   <div class="about_parent">
     <div class="about_child">
 
       <div class="about_bg_hero">
         <div class="row">
           <nav class="row full-width" id="top-nav">
-            <a href="#!/">
-              <div class="logo"><img src="_images/ky-logo2.png"></div>
+            <a href="../index.html">
+              <div class="logo"><img src="../_images/ky-logo2.png"></div>
             </a>
             <div class="nav_fullpage">
               <ul class="clearfix">
-                <a href="#!/about">About</a>
-                <a href="#!/projects">Projects</a>
-                <a href="#!/contact">Contact</a>
+                <a href="about.html">About</a>
+                <a href="projects.html">Projects</a>
+                <a href="contact.html">Contact</a>
               </ul>
             </div>
 
@@ -19,9 +38,9 @@
             <div id="overlay" class="overlay">
               <nav class="overlay-menu">
                 <ul>
-                  <li><a href="#!/about">About</a></li>
-                  <li><a href="#!/projects">Projects</a></li>
-                  <li><a href="#!/contact">Contact</a></li>
+                  <li><a href="about.html">About</a></li>
+                  <li><a href="projects.html">Projects</a></li>
+                  <li><a href="contact.html">Contact</a></li>
                 </ul>
               </nav>
             </div>
@@ -37,18 +56,24 @@
             </div>
           </div-->
           <div class="about_hero_head">
-            <div id="typed-strings">
-              <div typed type-speed="3">The name's Yum,</div>
-              <div typed id="about_name" type-speed="3" start-timeout="900">Kevin Yum^500</div>
-              <div type-speed="3" typed start-timeout="1600">UX/UI designer &amp;</div>
-              <div type-speed="3" typed start-timeout="1600">Front End Developer</div>
-            </div>
+            <!--div id="typed-strings">
+              <p>The name's Yum, <br></p>
+              <p>Kevin Yum^500</p>
+              <p>UX/UI designer &amp;</p>
+              <p>Front End Developer</p>
+            </div-->
+
+            <span id="about-type"></span>
+            <span id="about-type-2"></span>
+            <span id="about-type-3"></span>
           </div>
         </div>
 
         <div class="row">
           <div class="scroll-for-more">
-            <a href="#" scroll-to="about_intro"><h3>Scroll<br><span class="animated_super_slow infinite flash"><img src="../_images/icons/scroll_down.png"></span></h3></a>
+            <a href="#about_intro">
+              <h3>Scroll<br><span class="animated_super_slow infinite flash"><img src="../_images/icons/scroll_down.png"></span></h3>
+            </a>
           </div>
         </div>
       </div>
@@ -80,7 +105,7 @@
 
               <div class="medium-4 columns">
                 <div class="ideas">
-                  <span class="icons" id="ideas_icon"><img src="_images/icons/idea.png"></span>
+                  <span class="icons" id="ideas_icon"><img src="../_images/icons/idea.png"></span>
                   <div class="HIT_info">
                     <h3>IDEAS</h3>
                     <p>I collaborate with my clients to help our ideas grow into an ideal and well-planned designs. My goal is to make sure clients are satisfied and proud of their design.</p>
@@ -90,7 +115,7 @@
 
               <div class="medium-4 columns">
                 <div class="development">
-                  <span class="icons" id="development_icon"><img src="_images/icons/gear.png"></span>
+                  <span class="icons" id="development_icon"><img src="../_images/icons/gear.png"></span>
                   <div class="HIT_info">
                     <h3>DEVELOPMENT</h3>
                     <p>I plan out the structure of the website, focusing on responsive web design, intuitive UI, and creative interactions fit for the client's needs. I keep in mind that users often leave web pages that are unintuitive. To make them stay longer I develop the site to flow and have a clear design. I strive to create memorable interactions for the users to help your site grow.</p>
@@ -100,7 +125,7 @@
 
               <div class="medium-4 columns">
                 <div class="code">
-                  <span class="icons" id="code_icon"><img src="_images/icons/code.png"></span>
+                  <span class="icons" id="code_icon"><img src="../_images/icons/code.png"></span>
                   <div class="HIT_info">
                     <h3>CODE</h3>
                     <p>I design with multiple browsers -- Chrome, Firefox, Safari, Edge -- in mind on multiple platforms -- PC, Mac, tablets, phones. Generally, I code from scratch using HTML, CSS, and JavaScript using front-end frameworks like Foundation and Bootstrap, but I also use Wordpress. I also have expertise in programming for back-end using PHP and MySQL.</p>
@@ -122,7 +147,7 @@
               <h1>Want to hire me or work together?</h1>
               <h2>Feel free to contact me!</h2>
               <ul class="clearfix">
-                <li><a href="#!/contact" id="contact_moi">Contact Moi</a></li>
+                <li><a href="contact.html" id="contact_moi">Contact Moi</a></li>
                 <li><a href="../_downloads/Kevin%20Yum%20-%20Resume2018.pdf" download target="_blank" id="resume">Download Resume</a></li>
               </ul>
             </div>
@@ -138,12 +163,17 @@
   </div>
 
 
-  <script src='_js/jquery-3.2.1.js'></script>
-  <script src="_js/foundation.min.js"></script>
-  <script src="_js/overlay.js"></script>
-  <script src="_js/typewriter.js"></script>
-  <script src="_js/jquery.waypoints.min.js"></script>
-  <script src="_js/waypoint_app.js"></script>
-  <script src="_js/typed.min.js"></script>
-  <script src="_js/typed_app.js"></script>
+  <script src='../_js/jquery-3.2.1.js'></script>
+  <script src="../_js/foundation.min.js"></script>
+  <script src="../_js/overlay.js"></script>
+  <script src="../_js/jquery.waypoints.min.js"></script>
+  <script src="../_js/waypoint_app.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/typeit/5.6.0/typeit.min.js"></script>
+  <script src="../_js/typeit_app.js"></script>
+  <script src="../_js/smooth_scroll.js"></script>
+
+
+</body>
+  
+</html>
 

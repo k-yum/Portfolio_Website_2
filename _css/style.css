@@ -471,7 +471,14 @@ input[disabled="disabled"] {
   margin: 20px 20px -10 0;
 }
 
-
+.alert {
+  text-align: center;
+  padding: 10px;
+  background: #79c879;
+  color: #fff;
+  margin-bottom: 10px;
+  display: none;
+}
 
 
 /* ===============================
@@ -548,13 +555,8 @@ input[disabled="disabled"] {
   color: gray;
 }
 
-#about_name {
-  color: firebrick;
-}
-
-#typed,
-#typed-strings {
-  color: black;
+#about-type, #about-type-2,
+#about-type-3 {
   font-family: bebas, sans-serif;
   font-weight: lighter;
   font-size: 5.8em;
@@ -563,6 +565,10 @@ input[disabled="disabled"] {
   letter-spacing: -2px;
   word-spacing: 4px;
   line-height: 100px
+}
+
+#about-type-2 {
+  color: firebrick;
 }
 
 .typed-cursor {
@@ -718,6 +724,25 @@ input[disabled="disabled"] {
    ========== PROJECTS ===========
    =============================== */
 
+.project-intro {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: url(../_images/backgrounds/startup-593327_1920.jpg) no-repeat;
+  background-size: cover;
+}
+
+.project-intro h1 {
+  font-family: bebas, sans-serif;
+  font-size: 5.4em;
+  letter-spacing: 20px;
+  color: white;
+  margin: 150px;
+  text-align: left;
+}
+
 .GW-small,
 .ASCEND-small {
   width: 100%;
@@ -754,7 +779,7 @@ input[disabled="disabled"] {
   word-spacing: 20px;
   text-align: center;
   position: relative;
-  top: 200px;
+  top: 250px;
   height: 200px;
 }
 
@@ -763,9 +788,9 @@ input[disabled="disabled"] {
   font-family: brandon, sans-serif;
   font-size: 20px;
   position: relative;
-  top: 40vh;
+  top: 35vh;
   text-align: center;
-  width: 30%;
+  width: 15%;
   margin: 10px auto 20px auto;
   padding: 10px;
   border: 1.5px solid #ffff00;
