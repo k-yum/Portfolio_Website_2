@@ -261,59 +261,6 @@ body {
   margin: 20px;
 }
 
-/*.overlay {
-  height: 0%;
-  width: 100%;
-  position: fixed;
-  z-index: 100;
-  top: 0;
-  left: 0;
-  background-color: #0F0E0E;
-  overflow-y: hidden;
-  transition: 0.5s;
-}
-
-.overlay-content {
-  position: relative;
-  top: 25%;
-  width: 100%;
-  text-align: center;
-  margin-top: 30px;
-}
-
-.overlay a {
-
-  text-decoration: none;
-  font-size: 70px;
-  font-family: bebas;
-  color: firebrick;
-  display: block;
-  transition: 0.3s;
-}
-
-.overlay a:hover,
-.overlay a:focus {
-  color: #f1f1f1;
-}
-
-.overlay .closebtn {
-  position: absolute;
-  top: 20px;
-  right: 45px;
-  font-size: 70px;
-}
-
-@media screen and (max-height: 450px) {
-  .overlay a {
-    font-size: 20px
-  }
-  .overlay .closebtn {
-    font-size: 40px;
-    top: 15px;
-    right: 35px;
-  }
-}*/
-
 @media screen and (max-width: 650px) {
   #navbtn {
     display: block;
@@ -824,21 +771,6 @@ input[disabled="disabled"] {
   background-color: #EDEDED;
 }
 
-/*.showcase_ascend:after {
-  content: "";
-  background-image: url(../_images/project_ascend_bg_web.jpg);
-  background-size: cover;
-  opacity: 0.4;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  position: fixed;
-  z-index: -1;
-  background-blend-mode: luminosity;
-  background-color: grey;
-}*/
-
 .ascend-header {
   height: 800px;
   background: url(../_images/showcase/ascend/header/ascend-showcase-header-coffee.jpg);
@@ -937,90 +869,6 @@ input[disabled="disabled"] {
   height: 100%;
   display: block;
   position: relative;
-}
-
-.showcase_GW:after {
-  content: "";
-  background-image: url(../_images/project_gw_bg_web.jpg);
-  background-size: cover;
-  opacity: 0.4;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  position: fixed;
-  z-index: -1;
-  background-blend-mode: luminosity;
-  background-color: grey;
-}
-
-.GW_intro,
-.ascend_intro {
-  width: 62.64%;
-  margin: 0 auto 80px auto;
-}
-
-.GW_intro h1,
-.ascend_intro h1 {
-  font-family: museo, sans-serif;
-  font-size: 3.4em;
-  font-weight: bold;
-  letter-spacing: 13px;
-  word-spacing: 10px;
-  text-transform: uppercase;
-  color: #ff5144;
-  text-align: center;
-  margin-top: 100px;
-}
-
-.project_yearService {
-  margin: 30px 0 30px 5px;
-
-}
-
-.GW_intro h3,
-.ascend_intro h3,
-.GW_intro p,
-.ascend_intro p {
-  font-size: 18px;
-  color: black;
-}
-
-.GW_intro h3,
-.ascend_intro h3 {
-  font-family: museo, sans-serif;
-  display: inline-block;
-  font-weight: bold;
-  margin: 30px 100px 0 0;
-}
-
-.launch_site {
-  text-transform: uppercase;
-  font-weight: 100;
-  color: black;
-  margin-right: 0px;
-  background-color: yellow;
-  padding: 0 3px 0 3px;
-}
-
-.launch_site:hover {
-  color: red;
-}
-
-.space {
-  visibility: hidden;
-}
-
-.GW_intro p,
-.ascend_intro p {
-  font-family: brandon, sans-serif;
-  font-weight: lighter;
-}
-
-#summary_GW,
-#summary_ascend {
-  margin: 60px 0 50px 5px;
-
 }
 
 .project_web_pic img {
@@ -1160,28 +1008,5 @@ canvas {
   height: 100%; 
 }
 
-/* =====================================
-   ============ ANIMATIONS =============
-   ===================================== */
-
-/*
-.main.ng-enter {
-  transition: 0.5s linear all;
-  opacity: 0;
-}
-
-.main.ng-enter.ng-enter-active {
-  opacity: 1;
-}*/
-
-/* now the element will fade out before it is removed from the DOM */
-
-/*.main.ng-leave {
-  transition:0.5s linear all;
-  opacity:1;
-}
-.main.ng-leave.ng-leave-active {
-  opacity:0;
-}*/
 
 
