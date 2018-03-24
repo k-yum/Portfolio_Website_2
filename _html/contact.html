@@ -57,7 +57,7 @@
 
     <div class="contact_intro animated_fast fadeInDown">
       <div class="row">
-        <div class="small-6 small-offset-3 column">
+        <div class="medium-6 medium-offset-3 column">
           <h1>GET IN TOUCH</h1>
           <p>Want to get in touch or talk to me?<br>Contact me via form, email, phone/text</p>
         </div>
@@ -71,37 +71,31 @@
         <form id="contactForm">
 
           <div class="row">
-            <div class="small-6 small-offset-3 column">
+            <div class="medium-6 medium-offset-3 column">
               <div class="alert">Message sent! Thanks a bunch!</div>
             </div>
           </div>
 
           <div class="row">
-            <div class="small-6 small-offset-3 column">
-              <!--div ng-show="contactForm.name.$touched && contactForm.name.$invalid">
-                <small style="color: red; display: block; text-align: center;">Enter a valid name</small>
-              </div-->
-              <input type="text" placeholder="name" id="name" required/>
+            <div class="medium-6 medium-offset-3 column">
+              <input type="text" placeholder="Name" id="name" required/>
             </div>
           </div>
 
           <div class="row">
-            <div class="small-6 small-offset-3 column">
-              <!--div ng-show="contactForm.email.$touched && contactForm.email.$invalid">
-                <small style="color: red; display: block; text-align: center;">Enter a valid email</small>
-              </div-->
+            <div class="medium-6 medium-offset-3 column">
               <input type="email" placeholder="Email" id="email" required/>
             </div>
           </div>
 
           <div class="row">
-            <div class="small-6 small-offset-3 column">
+            <div class="medium-6 medium-offset-3 column">
               <textarea placeholder="Your Message" id="message" required></textarea>
             </div>
           </div>
 
           <div class="row">
-            <div class="small-6 small-offset-3 column">
+            <div class="medium-6 medium-offset-3 column">
               <input type="submit" value="Send" />
             </div>
           </div>
@@ -113,10 +107,12 @@
 
     <div class="contact_info animated_fast fadeInUp">
       <div class="row">
-        <div class="small-6 small-offset-3 column">
+        <div class="medium-6 medium-offset-3 column">
           <p>(818) 861-9664<br>kevinyumdesign@gmail.com</p>
-          <img src="../_images/fb_icon.png">
-          <img src="../_images/github_icon.png">
+          <div class="contact-icons">
+            <img src="../_images/fb_icon.png">
+            <img src="../_images/github_icon.png">
+          </div>
         </div>
       </div>
     </div>
@@ -130,5 +126,5 @@
   <script src="../_js/firebase_contact.js"></script>
 
 </body>
-  
+
 </html>

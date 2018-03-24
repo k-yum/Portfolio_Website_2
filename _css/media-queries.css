@@ -33,213 +33,329 @@
 @media screen and (max-width: 800px) {
   #face_img {
     display: none;
-}
-
-@media screen and (max-width: 480px) {
-  body {
-    overflow-x: hidden;
   }
 
-  /*========== LOGO & NAV ==========*/
-  .logo{
-    width: 35px;
-  }
-  .button_container {
-    width: 25px;
-  }
+  @media screen and (max-width: 480px) {
+    body {
+      overflow-x: hidden;
+    }
 
-  .button_container.active .top {
-    transform: translateY(11px) translateX(0) rotate(45deg);
-    background: #FFF;
-  }
+    /*========== LOGO & NAV ==========*/
+    .logo {
+      width: 35px;
+    }
+    .button_container {
+      width: 25px;
+    }
 
-  .button_container.active .middle {
-    opacity: 0;
-    background: #FFF;
-  }
+    .button_container.active .top {
+      transform: translateY(11px) translateX(0) rotate(45deg);
+      background: #FFF;
+    }
 
-  .button_container.active .bottom {
-    transform: translateY(-11px) translateX(0) rotate(-45deg);
-    background: #FFF;
-    top: 22px;
-  }
+    .button_container.active .middle {
+      opacity: 0;
+      background: #FFF;
+    }
 
-  .button_container span {
-    background: #FFF;
-    border: none;
-    height: 3px;
-    width: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    transition: all .35s ease;
-    cursor: pointer;
+    .button_container.active .bottom {
+      transform: translateY(-11px) translateX(0) rotate(-45deg);
+      background: #FFF;
+      top: 22px;
+    }
 
-  }
+    .button_container span {
+      background: #FFF;
+      border: none;
+      height: 3px;
+      width: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      transition: all .35s ease;
+      cursor: pointer;
 
-  .button_container span:nth-of-type(2) {
-    top: 7px;
-  }
+    }
 
-  .button_container span:nth-of-type(3) {
-    top: 14.4px;
-  }
+    .button_container span:nth-of-type(2) {
+      top: 7px;
+    }
 
-  .overlay a {
-    font-size: 50px;
-  }
+    .button_container span:nth-of-type(3) {
+      top: 14.4px;
+    }
+
+    .overlay a {
+      font-size: 50px;
+    }
 
 
-  /*========== HOME ==========*/
-  #particles-js {
-    display: none;
-  }
-  .home-mobile {
-    display:block;
-  }
-  .home {
-    height: 100px;
-    margin: 10px;
-  }
-  .intro {
-    margin-top: 200px;
-    text-align: center;
-  }
-  .home h1 {
-    width: 100%;
-    font-size: 70px;
-    line-height: 50px;
-  }
-  .home p {
-    font-size: 13px;
-  }
-  #learn-more-btn {
-    font-size: 16px;
-  }
-  
+    /*========== HOME ==========*/
+    #particles-js {
+      display: none;
+    }
+    .home-mobile {
+      display: block;
+    }
+    .home {
+      height: 100px;
+      margin: 10px;
+    }
+    .intro {
+      margin-top: 200px;
+      text-align: center;
+    }
+    .home h1 {
+      width: 100%;
+      font-size: 70px;
+      line-height: 50px;
+    }
+    .home p {
+      font-size: 13px;
+    }
+    #learn-more-btn {
+      font-size: 16px;
+    }
 
-  /*========== ABOUT ==========*/
-  #top-nav {
-    padding: 10px;
-  }
-  .about_bg_hero {
-    width: 100%;
-    height: 92.5vh;
-  }
-  .about_hero_head {
-    margin: 90px auto;
-    padding: 10px;
-  }
-  #typed,
-  #typed-strings {
-    font-size: 45px;
-    line-height: 50px;
-    text-align: center;
-  }
-  .about_me {
-    margin: 0px;
-  }
-  .about_me h1 {
-    font-size: 45px;
-  }
-  .about_me p {
-    font-size: 12px;
-  }
-  .about_HIT p {
-    margin-top: 0px;
-    font-size: 14px;
-  }
-  .about_HIT {
-    height: auto;
-  }
-  #ideas_icon,
-  #development_icon,
-  #code_icon {
-    width: 25px;
-  }
-  .about_HIT h3 {
-    font-size: 20px;
-    margin-top: 10px;
-  }
-  .ideas,
-  .development,
-  .code {
-    height: auto;
-  }
-  .code {
-    margin-bottom: 50px;
-  }
-  .hire_bg {
-    padding-bottom: 40px;
-  }
-  .hire h1 {
-    font-size: 30px;
-    line-height: 50px;
-    margin-top: 50px;
-  }
-  .hire h2 {
-    font-size: 25px;
-  }
-  .hire ul {
-    width: 85%;
-  }
-  .hire a {
-    width: 141px;
-    font-size: 13px;
-    margin-top: 3px;
-    border-width: 2px;
-    padding: 7px;
-  }
 
-  /*========== PROJECTS ==========*/
-  .GW-small {
-    height: 92.5vh;
-  }
-  .ASCEND-small {
-    height: 100vh;
-  }
-  .title_GW h1,
-  .title_ascend h1 {
-    font-size: 35px;
-    padding-left: 20px;
-  }
-  .title_GW a,
-  .title_ascend a {
-    font-size: 14px;
-    top: 30vh;
-  }
+    /*========== ABOUT ==========*/
+    #top-nav {
+      padding: 10px;
+    }
+    .about_bg_hero {
+      width: 100%;
+      height: 92.5vh;
+    }
+    .about_hero_head {
+      margin: 90px auto;
+      padding: 10px;
+    }
+    #about-type,
+    #about-type-2,
+    #about-type-3 {
+      font-size: 45px;
+      line-height: 50px;
+      display: block;
+      text-align: center;
+    }
+    .about_me {
+      margin: 0px;
+    }
+    .about_me h1 {
+      font-size: 45px;
+    }
+    .about_me p {
+      font-size: 12px;
+    }
+    .about_HIT p {
+      margin-top: 0px;
+      font-size: 14px;
+    }
+    .about_HIT {
+      height: auto;
+    }
+    #ideas_icon,
+    #development_icon,
+    #code_icon {
+      width: 25px;
+    }
+    .about_HIT h3 {
+      font-size: 20px;
+      margin-top: 10px;
+    }
+    .ideas,
+    .development,
+    .code {
+      height: auto;
+    }
+    .code {
+      margin-bottom: 50px;
+    }
+    .hire_bg {
+      padding-bottom: 40px;
+    }
+    .hire h1 {
+      font-size: 30px;
+      line-height: 50px;
+      margin-top: 50px;
+    }
+    .hire h2 {
+      font-size: 25px;
+    }
+    .hire ul {
+      width: 85%;
+    }
+    .hire a {
+      width: 141px;
+      font-size: 13px;
+      margin-top: 3px;
+      border-width: 2px;
+      padding: 7px;
+    }
 
-  /*========== GW & ASCEND showcase ==========*/
-  .showcase_GW,
-  .showcase_ascend {
+    /*========== PROJECTS ==========*/
+    .title_GW h1,
+    .title_ascend h1 {
+      font-size: 35px;
+      padding-left: 20px;
+    }
+    .title_GW a,
+    .title_ascend a {
+      width: 100px;
+      font-size: 14px;
+      top: 30vh;
+    }
 
+    /*========== GW & ASCEND showcase ==========*/
+    .GW-header,
+    .ascend-header {
+      height: 400px;
+    }
+    .ascend-overview,
+    .GW-overview {
+      margin: 40px;
+      padding: 10px;
+    }
+    .ascend-overview h1,
+    .GW-overview h1 {
+      font-size: 45px;
+      line-height: 50px
+    }
+    .ascend-overview h2,
+    .GW-overview h2 {
+      font-size: 20px;
+    }
+    .ascend-overview a,
+    .GW-overview a {
+      font-size: 12px;
+      width: 60px;
+      margin-top: 14px;
+    }
+    #ascend-info-section,
+    #GW-info-section {
+      margin-top: 40px;
+    }
+    #ascend-info,
+    #GW-info {
+      padding: 0px;
+      margin-bottom: 20px;
+    }
+    #ascend-info h4,
+    #GW-info h4 {
+      font-size: 16px;
+    }
+    #ascend-info p,
+    #ascend-info li,
+    #GW-info p,
+    #GW-info li {
+      font-size: 12px;
+    }
+    .showcase-ascend-pics,
+    .ascend-for-members,
+    .ascend-for-newcomers,
+    .GW-about-services {
+      width: 100%;
+      height: 100%;
+      margin: 60px auto 0px auto;
+      padding: 0 30px;
+    }
+    .ascend-for-members h1,
+    .ascend-for-newcomers h1,
+    .GW-about-services h1 {
+      font-size: 16px;
+    }
+    .ascend-for-members p,
+    .ascend-for-newcomers p,
+    .GW-about-services p {
+      font-size: 12px;
+    }
+    .project_web_pic img {
+      margin: -30px auto 0px auto;
+    }
+    #GW-service-showcase {
+      margin-top: 0px;
+    }
+    .GW-about-services {
+      margin-bottom: 10px;
+    }
+    .showcase-GWService-pics {
+      margin: 0px 30px 0px 30px;
+    }
+    .showcase-GWService-pics h1 {
+      font-size: 13px;
+      margin-top: 20px;
+    }
+    #GW-logo-pic {
+      margin: 60px 0;
+    }
+    .showcase-GW-pics,
+    .showcase-ascend-shadow {
+      box-shadow: 1px 1px 20px 1px rgba(0, 0, 0, 0.6);
+    }
+    .showcase-redirects {
+      margin: 60px 0 0 0;
+      padding: 40px 0 20px 0;
+    }
+    .showcase-redirects img {
+      width: 12px;
+    }
+    .showcase-redirects a {
+      width: 120px;
+      padding: 10px;
+      font-size: 12px;
+    }
+
+    /*========== CONTACT ==========*/
+    .contact h1 {
+      font-size: 45px;
+      line-height: 40px;
+      text-align: center;
+    }
+    .contact p {
+      font-size: 14px;
+      line-height: 16px;
+      padding: 0 10px;
+      text-align: center;
+    }
+    .contact_info p {
+      margin-top: 20px;
+    }
+    .contact-icons {
+      text-align: center;
+    }
+    #name,
+    #email {
+      height: 30px;
+    }
+    #message {
+      height: 80px;
+    }
+    form input::-webkit-input-placeholder,
+    form textarea::-webkit-input-placeholder {
+      font-size: 12px;
+    }
+    form input::-moz-input-placeholder,
+    form textarea::-moz-input-placeholder {
+      font-size: 12px;
+    }
+    .content {
+      padding: 10px 30px;
+    }
+    .content button,
+    .content input[type="submit"] {
+      background: #fff;
+      padding: 0px;
+      color: #777;
+      font-size: 12px;
+    }
+    .content input[type="submit"]:last-child {
+      width: 70px;
+      height: 30px;
+    }
+    .alert {
+      font-size: 13px;
+      padding: 5.5px;
+      margin-bottom: 15px;
+
+    }
   }
-
-  .showcase_GW:after {
-    background-repeat: no-repeat;
-    background-position: center;
-  }
-
-  .showcase_ascend:after {
-    background-image: url(../_images/ascend_mobile.jpg);
-    background-repeat: no-repeat;
-  }
-
-  .GW_intro,
-  .ascend_intro {
-    width: 80%;
-  }
-
-  .GW_intro h1,
-  .ascend_intro h1 {
-    font-size: 35px;
-  }
-
-  .GW_intro h3,
-  .ascend_intro h3,
-  .GW_intro p,
-  .ascend_intro p {
-    font-size: 16px;
-  }
-
-}
