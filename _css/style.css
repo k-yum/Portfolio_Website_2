@@ -17,6 +17,19 @@ a:hover {
   color: black;
 }
 
+/* Get rid of outline after click */
+#top-nav:active, #top-nav:focus {
+  outline: 0;
+  border: none;
+  -moz-outline-style: none
+}
+
+#about_intro:active, #about_intro:focus {
+  outline: 0;
+  border: none;
+  -moz-outline-style: none
+}
+
 /* NO SCROLLBAR */
 
 /*::-webkit-scrollbar {

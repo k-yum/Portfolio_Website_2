@@ -56,7 +56,7 @@
   animation-duration: 2s;
   -webkit-animation-fill-mode: both;
   animation-fill-mode: both;
-  animation-delay: 4s;
+  animation-delay: 3s;
 }
 
 .animated_fast2 {
@@ -64,7 +64,7 @@
   animation-duration: 2s;
   -webkit-animation-fill-mode: both;
   animation-fill-mode: both;
-  animation-delay: 4.2s;
+  animation-delay: 3.2s;
 }
 
 .animated_fast3 {
@@ -72,7 +72,7 @@
   animation-duration: 2s;
   -webkit-animation-fill-mode: both;
   animation-fill-mode: both;
-  animation-delay: 4.4s;
+  animation-delay: 3.4s;
 }
 
 .animated_fast4 {
@@ -80,7 +80,7 @@
   animation-duration: 1s;
   -webkit-animation-fill-mode: both;
   animation-fill-mode: both;
-  animation-delay: 4.6s;
+  animation-delay: 3.6s;
 }
 
 .animated_fast5 {
@@ -88,7 +88,7 @@
   animation-duration: 1s;
   -webkit-animation-fill-mode: both;
   animation-fill-mode: both;
-  animation-delay: 6s;
+  animation-delay: 5s;
 }
 
 .animated_delay {

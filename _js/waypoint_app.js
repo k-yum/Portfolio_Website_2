@@ -80,7 +80,7 @@ $(document).ready(function() {
   $('#ascend-title-section').waypoint(function() {
     $('#ascend-title-section').addClass('animated_fast fadeInLeft');
   }, {
-    offset: '80%'
+    offset: '70%'
   });
   $('#ascend-info-section').waypoint(function() {
     $('#ascend-info-section').addClass('animated_fast fadeInUp');
@@ -90,22 +90,22 @@ $(document).ready(function() {
   $('.showcase-ascend-pics.newcomers').waypoint(function() {
     $('.showcase-ascend-pics.newcomers').addClass('animated_fast fadeInLeftBig');
   }, {
-    offset: '70%'
+    offset: '65%'
   });
   $('.ascend-for-newcomers').waypoint(function() {
     $('.ascend-for-newcomers').addClass('animated_fast fadeInUpBig');
   }, {
-    offset: '70%'
+    offset: '60%'
   });
   $('.showcase-ascend-pics.members').waypoint(function() {
     $('.showcase-ascend-pics.members').addClass('animated_fast fadeInLeftBig');
   }, {
-    offset: '70%'
+    offset: '65%'
   });
   $('.ascend-for-members').waypoint(function() {
     $('.ascend-for-members').addClass('animated_fast fadeInUpBig');
   }, {
-    offset: '70%'
+    offset: '60%'
   });
   
 });
