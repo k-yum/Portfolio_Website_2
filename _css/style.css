@@ -312,7 +312,7 @@ body {
   color: white;
 }
 
-.contact img {
+.contact-icons img {
   width: 40px;
   margin-right: 10px;
 }
@@ -347,7 +347,7 @@ form input::-moz-input-placeholder, form textarea::-moz-input-placeholder {
 }
 
 #submit {
-  width: 16s0px;
+  width: 160px;
   height: 45px;
   background-color: firebrick;
   color: #262626;
@@ -954,7 +954,7 @@ form input::-moz-input-placeholder, form textarea::-moz-input-placeholder {
 }
 
 .showcase-redirects img {
-  width: 20px;
+  width: 16px;
 }
 
 .showcase-redirects p {
