@@ -656,16 +656,6 @@ form input::-moz-input-placeholder, form textarea::-moz-input-placeholder {
    ========== PROJECTS ===========
    =============================== */
 
-.project-intro {
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  background: url(../_images/backgrounds/startup-593327_1920.jpg) no-repeat;
-  background-size: cover;
-}
-
 .project-intro h1 {
   font-family: bebas, sans-serif;
   font-size: 5.4em;
@@ -965,7 +955,7 @@ form input::-moz-input-placeholder, form textarea::-moz-input-placeholder {
   display: inline-block;
   width: 200px;
   padding: 20px;
-  background-color: black;
+  background-color:;
   border-radius: 40px;
   font-family: bebas, sans-serif;
   font-size: 16px;
